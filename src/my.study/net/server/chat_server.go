@@ -29,7 +29,7 @@ var (
 )
 
 func broadcast() {
-	for { //  所有不能一次退出的都用for
+	for { //  所有不能一次select就退出的都用for
 		select {
 		case msg := <-messages:
 			for cli := range clientChans {
@@ -54,9 +54,8 @@ func InputTimeout(c net.Conn, timeout time.Duration, input func(chan struct{}) (
 			// 不想select一次退出，必须在前有for循环
 			select { // select 下所有的case都是在等着读的通道
 
-			// 问：是否有坑主程序已经推出了， routine还在这等待， 答：不会，因为本routine有自超时的处理， 这是个避免routine
-			// 在出程序退出还存在等待的好办法
-
+			// 问：是否有可能主程序已经退出了， routine还在这等待，
+			// 答：不会，因为本routine有自超时的处理， 这是避免routine在出程序退出还存在等待的好办法
 			case <-sig:
 				timer.Reset(timeout)
 

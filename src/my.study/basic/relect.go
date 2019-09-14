@@ -62,13 +62,19 @@ func reflect1(any interface{}){
 
 
 func Testreflect(){
-
-	fmt.Println("<------------------------------Testreflect begin ------------->")  
 	user := User{1, "abc"}
 	fmt.Printf("user: %#v \n", user)
 	reflect1(user)
 	fmt.Printf("after reflect1 user: %#v \n", user)
-	fmt.Println("\n<------------------------------Testreflect end ------------->")  
+}
+
+func Reflect(){
+	fmt.Println("<------------------------------Reflect begin ------------->")
+
+	Testreflect()
+
+	fmt.Println("\n<------------------------------Reflect end ------------->")
+
 }
 	
 

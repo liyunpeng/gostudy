@@ -2,23 +2,23 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"sync"
-
 	"my.study/auto"
 	"my.study/basic"
 	"my.study/btcoin"
 	"my.study/net/client"
 	"my.study/net/server"
+	"os"
 )
 
 var help = func() {
 	fmt.Println("help")
 }
+// TODO ： 封装一个像log文件写Log的函数 log要带时间戳
 
 func main() {
 	args := os.Args
 
+	// TODO: 创建保存log的文件
 	if len(args) < 1 || args == nil {
 		help()
 		return
@@ -66,25 +66,18 @@ func main() {
 	}
 }
 func base() {
+	basic.Base()
+
 	basic.Interface()
-	basic.AddA(5, 8)
-	basic.Testrage()
-	basic.Testfile()
-	basic.Testreflect()
 
-	m := []int{7, 8, 9}
-	basic.TestMultiPara(5, m...)
+	basic.Range()
 
-	wg := sync.WaitGroup{}
 
-	const synNum int = 5
-	wg.Add(synNum)
-	for i := 0; i < synNum; i++ {
-		go func(i int) {
-			fmt.Println(i)
-			wg.Done()
-		}(i)
-	}
-	wg.Wait()
-	fmt.Println("end")
+	basic.Io()
+
+	basic.Reflect()
+
+	basic.Encode()
+
+	basic.Chan()
 }
