@@ -121,9 +121,7 @@ func handleConn1(c net.Conn) {
 }
 
 func ouputToConnection(c net.Conn, data <-chan string) {
-	//	scanner1 := bufio.NewScanner(c)
 	for v := range data {
-
 		fmt.Fprintf(c, " %s \r\n", v) //  需要加深理解
 	}
 }

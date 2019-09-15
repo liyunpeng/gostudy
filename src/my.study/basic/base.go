@@ -4,8 +4,11 @@ import (
 	"fmt"
 	"my.study/global"
 )
-// 变量声明
+
+
+
 func AddA(num1 int, num2 int) (result int){
+	// 变量声明
 	var (
 		a int
 		b int
@@ -90,6 +93,26 @@ func TestMultiPara(i int, m...int){
 	}
 }
 
+func assert1() {
+	/*
+	  var data interface{} = "great"
+	    if data, ok := data.(int); ok {  // data类型转换失败，被赋值为0
+	        fmt.Println("[is an int] value =>",data)
+	    } else {
+	        fmt.Println("[not an int] value =>",data)
+	        //prints: [not an int] value => 0 (not "great")
+	    }
+
+	 */
+	var data interface{} = "great"
+	if res, ok := data.(int); ok {
+		fmt.Println("[is an int] value =>",res)
+	} else {
+		fmt.Println("[not an int] value =>",data)
+		//prints: [not an int] value => great (as expected)
+	}
+}
+
 func Base(){
 	global.Logger.Println("base")
 
@@ -106,6 +129,7 @@ func Base(){
 	m := []int{7, 8, 9}
 	TestMultiPara(5, m...)
 
+	assert1()
 	fmt.Println("<--------------------- Base end ----------------------->")
 
 }

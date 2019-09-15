@@ -27,10 +27,16 @@ func Net2() {
 	resp, err := http.Get("http://127.0.0.1:8080/index/a=a1&b=b1")
 	if err != nil {
 		fmt.Printf("%#v \n", err)
+		/*
+			defer 放在出错判断后的原因：
+			http请求失败，返回个无效的resp， 这时调用close会panic
+			所以 defer要考虑异常情况， 要判断defer的东西
+		*/
+		defer resp.Body.Close()
 		return
 	}
 
-	//defer resp.Body.Close()
+
 	body, _ := ioutil.ReadAll(resp.Body)
 
 	fmt.Println(string(body))

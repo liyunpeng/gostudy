@@ -11,8 +11,10 @@ import (
 )
 
 func Echoserver() {
-	listener, err := net.Listen("tcp", "localhost:8000")
+	listener, err := net.Listen("tcp", "localhost:7890")
 	if err != nil {
+		log.SetFlags(log.Ldate|log.Ltime|log.LstdFlags)
+		log.Println("err")
 		log.Fatal(err)
 	}
 

@@ -19,8 +19,29 @@ func newCall()  {
 	p.call()
 }
 
+type dataI struct {
+	name string
+}
+func (p *dataI) print() {
+	fmt.Println("name:",p.name)
+}
+type printer interface {
+	print()
+}
+func interfaceStruct() {
+	d1 := dataI{"one"}
+	d1.print() //ok
+	//var in printer = dataI{"two"} //error
+	var in printer = new(dataI)
+	in.print()
+
+	//m := map[string]dataI {"x":dataI{"three"}}
+	//m["x"].print() //error
+}
+
 func Interface()  {
 	fmt.Println("<--------------------------- Interface begin ------------------->")
 	newCall()
-	fmt.Println("<--------------------------- Interface begin ------------------->")
+	interfaceStruct()
+	fmt.Println("<--------------------------- Interface end ------------------->")
 }

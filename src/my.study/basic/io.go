@@ -8,8 +8,6 @@ import (
 
 
 
-
-
 func Testfile(){
 	f, _ := os.Create("a.txt")
 	

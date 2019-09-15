@@ -66,20 +66,7 @@ func writeTwoChan() {
 	fmt.Println("writeTwoChan end")
 }
 
-func sync1() {
-	wg := sync.WaitGroup{}
 
-	const synNum int = 5
-	wg.Add(synNum)
-	for i := 0; i < synNum; i++ {
-		go func(i int) {
-			fmt.Println(i, " sync1 done-1")
-			wg.Done()
-		}(i)
-	}
-	wg.Wait()
-	fmt.Println(" sync1 end")
-}
 
 func closeChan() {
 	done := make(chan struct{})
@@ -209,8 +196,6 @@ func consumer2(routineId int, wq <-chan interface{}, done <-chan struct{}, wg *s
 func Chan() {
 	fmt.Println("<------------------------- Chan begin -------------------->")
 	producerConsumer()
-
-	sync1()
 
 	closeChan1()
 
