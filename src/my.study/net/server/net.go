@@ -11,7 +11,11 @@ import (
 )
 
 func Echoserver() {
-	listener, err := net.Listen("tcp", "localhost:7890")
+	/*
+	listener, err := net.Listen("tcp", "localhost:7890") 表示仅能有本机访问
+	*/
+	listener, err := net.Listen("tcp", "0.0.0.0:7890")
+	 */
 	if err != nil {
 		log.SetFlags(log.Ldate|log.Ltime|log.LstdFlags)
 		log.Println("err")
