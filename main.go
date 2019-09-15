@@ -13,7 +13,7 @@ import (
 var help = func() {
 	fmt.Println("help")
 }
-// TODO ： 封装一个像log文件写Log的函数 log要带时间戳
+
 
 func main() {
 	args := os.Args
@@ -26,6 +26,7 @@ func main() {
 
 	switch args[1] {
 	case "gen":
+
 		auto.Genfile()
 		break
 	case "base":
@@ -64,6 +65,8 @@ func main() {
 		fmt.Println("cmd err,exit")
 		break
 	}
+
+	//global.LoggerFile.Close()
 }
 func base() {
 	basic.Base()
@@ -71,7 +74,6 @@ func base() {
 	basic.Interface()
 
 	basic.Range()
-
 
 	basic.Io()
 

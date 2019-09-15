@@ -2,6 +2,7 @@ package basic
 
 import (
 	"fmt"
+	"my.study/global"
 )
 // 变量声明
 func AddA(num1 int, num2 int) (result int){
@@ -90,6 +91,8 @@ func TestMultiPara(i int, m...int){
 }
 
 func Base(){
+	global.Logger.Println("base")
+
 	fmt.Println("<--------------------- Base begin ----------------------->")
 
 	BitOperation()
