@@ -2,6 +2,7 @@ package basic
 
 import (
 	"fmt"
+	"my.study/global"
 	"sync"
 )
 
@@ -114,18 +115,27 @@ func closeChan1() {
 	close(done)
 	fmt.Println("closeChan1  programe  exit")
 }
+/*
+	管道操作的样本程序
+	用于生产者消费者的wq管道
+	用于让每个routine开始执行退出动作的done管道
+	用于等待每个routine都执行完的wg信号
+ */
+func chanStddPrograme() {
 
-func closeChan2() {
-	var wg sync.WaitGroup
 	/*
-		命名习惯: 用于信号通知的通道命名为done, 用于生产者消费者模式的通道命名为wq
-	 */
+		命名习惯:
+		用于信号通知的通道命名为done,  因为不存放具体数据， 所以用空结构体
+		用于生产者消费者模式的通道命名为wq， 因为要存放数据，而数据类型不确定， 所以用interface类型，即可以是任意类型数据
+		等待每个routine结束的wg信号
+	*/
 	done := make(chan struct{})
 	wq := make(chan interface{})
+	var wg sync.WaitGroup
 	workerCount := 2
 	for i := 0; i < workerCount; i++ {
 		wg.Add(1)
-		go doit(i, wq, done, &wg)
+		go consumer2(i, wq, done, &wg)
 	}
 
 	/*
@@ -136,7 +146,6 @@ func closeChan2() {
 	 	判断标准： 只有一次写，或没有写，只有一个close动作， done通道即是
 	*/
 	for i := 0; i < workerCount; i++ {
-
 		wq <- i
 	}
 
@@ -145,18 +154,53 @@ func closeChan2() {
 	 这里读通道阻塞的routine被启动了两次， 就有两个读通道阻塞，close将这两个阻塞全部解除
 	*/
 	close(done)
+	/*
+		用信号等待所有routine结束的原因
+		本来上面的close动作能够解锁所有routine里的done通道的阻塞，然后routine就结束了，
+		但是routine做这些事的时候是磨磨蹭蹭的， 主程序是很麻利的往下执行了，
+		主程序下面事也少， 主程序就麻利的退出了
+		而这时候routine还没磨蹭完，routine需要用的log文件以及控制台，都被主程序给关闭了，
+		routine就执行异常了
+		所以主程序必须用个信号等待所有的routine的磨蹭的把事情做完，主程序才退出
+		所以，在主程序的末尾都会有这种标准写法：
+		close(done)
+		wg.wait()
+		两个动作挨在一起
+		close让每个routine开始执行退出动作
+		wg.wait()等待每个routine执行完退出动作
+	 */
 	wg.Wait()
 	fmt.Println("all done!")
 }
-func doit(workerId int, wq <-chan interface{}, done <-chan struct{}, wg *sync.WaitGroup) {
-	fmt.Printf("[%v] is running\n", workerId)
+func consumer2(routineId int, wq <-chan interface{}, done <-chan struct{}, wg *sync.WaitGroup) {
+	fmt.Printf("routine[%v]  is running\n", routineId)
+	global.Logger.Printf("[%v] is running\n", routineId)
+	/*
+		 defer 在本函数的结束前的最后一步调用， 但很多时候， 不能确定本函数在哪里结束
+	*/
 	defer wg.Done()
+	/*
+		接收管道的标准写法：
+		go 起个routine
+		在rouinte里 用
+	    for {
+			select {
+		建立等待消息的循环， 一般都不是只接收一次消息，所以用for无限循环
+		有两个case
+		一个case, 做消费者， 即读通道wq
+		一个case, 做接收结束信号用， 即读通道done,  整个routine就在这结束，即return
+ 	 */
 	for {
 		select {
-		case m := <-wq:
-			fmt.Printf("[%v] m => %v\n", workerId, m)
+		/*
+			对wq通道读操作，可以判断本routine充当消费者角色
+		 */
+		case product := <-wq:
+			fmt.Printf("routine[%v] product[%v] is consumed \n", routineId, product)
+			global.Logger.Printf("routine[%v] product[%v] is consumed \n", routineId, product)
 		case <-done:
-			fmt.Printf("[%v] is done\n", workerId)
+			fmt.Printf("[%v] is done\n", routineId)
+			global.Logger.Printf("[%v] is done\n", routineId)
 			return
 		}
 	}
@@ -170,7 +214,7 @@ func Chan() {
 
 	closeChan1()
 
-	closeChan2()
+	chanStddPrograme()
 
 	closeChan()
 
