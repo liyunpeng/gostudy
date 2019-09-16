@@ -35,8 +35,20 @@ func interfaceStruct() {
 	var in printer = new(dataI)
 	in.print()
 
+	/*
+		interface变量的类型转换
+		int1.(string) 表示转换为字符串
+	 */
+	var int1 interface{}
+	int1 = 1
+	/*
+	 interface变量.() 表示取interface变量的值，不是类型转换，
+	 括号里的类型名字必须是interface变量里存放的实际值得类型
+	*/
+	fmt.Println( int1.(int))
+
 	//m := map[string]dataI {"x":dataI{"three"}}
-	//m["x"].print() //error
+	//m["x"].print() //error  value为结构体， 用索引方式是娶不到结构体的
 }
 
 func Interface()  {

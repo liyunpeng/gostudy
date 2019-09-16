@@ -3,11 +3,14 @@ package main
 import (
 	"fmt"
 	"log"
+	sqla "my.study"
 	"my.study/auto"
 	"my.study/basic"
 	"my.study/btcoin"
+	httpserver "my.study/http"
 	"my.study/net/client"
 	"my.study/net/server"
+
 	"os"
 )
 
@@ -71,6 +74,12 @@ func main() {
 		break
 	case "chatserver":
 		server.ChatSever()
+		break
+	case "httpserver":
+		httpserver.HttpServer()
+		break
+	case "sql":
+		sqla.Sql()
 		break
 	default:
 		fmt.Println("cmd err,exit")
