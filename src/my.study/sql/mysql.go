@@ -1,4 +1,4 @@
-package sqla
+package sql
 
 import (
 	"database/sql"

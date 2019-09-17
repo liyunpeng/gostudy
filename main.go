@@ -3,14 +3,16 @@ package main
 import (
 	"fmt"
 	"log"
-	sqla "my.study"
 	"my.study/auto"
 	"my.study/basic"
 	"my.study/btcoin"
 	httpserver "my.study/http"
 	"my.study/net/client"
 	"my.study/net/server"
-
+	"my.study/nosql"
+	regexp1 "my.study/regexp"
+	"my.study/sql"
+	template1 "my.study/template"
 	"os"
 )
 
@@ -79,7 +81,17 @@ func main() {
 		httpserver.HttpServer()
 		break
 	case "sql":
-		sqla.Sql()
+		sql.Sql()
+		break
+	case "redis":
+		nosql.Redis()
+		break
+	case "template":
+		template1.Template()
+		break
+
+	case "regexp":
+		regexp1.Exp1()
 		break
 	default:
 		fmt.Println("cmd err,exit")
