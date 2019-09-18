@@ -14,7 +14,7 @@ var (
 	Pool *redis.Pool
 )
 
-func init() {
+func initRedis() {
 	redisHost := ":6379"
 	Pool = newPool(redisHost)
 	fmt.Println("<--------------------- redis init ---------------------->")
@@ -69,6 +69,7 @@ func Get(key string) ([]byte, error) {
 }
 
 func Redis() {
+	initRedis()
 	test, err := Get("test")
 	fmt.Println(string(test), err)
 }

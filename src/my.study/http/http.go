@@ -1,10 +1,12 @@
 package httpserver
 
 import (
+	"crypto/md5"
 	"fmt"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
 	"html/template"
+	"io"
 	"log"
 	"net/http"
 	"strconv"
@@ -25,6 +27,15 @@ import (
 */
 func handlerReqeust(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()                          //解析url传递的参数，对于POST则解析响应包的主体（request body）
+	token := r.Form.Get("token")
+	fmt.Fprintln(w, "token=", token)
+
+	if token != "" {
+		//验证token的合法性
+	} else {
+		//不存在token报错
+	}
+
 	fmt.Fprintln(w, "r.Method=", r.Method) //获取请求的方法
 	//注意:如果没有调用ParseForm方法，下面无法获取表单的数据
 	fmt.Fprintln(w, "form=", r.Form)
@@ -36,111 +47,11 @@ func handlerReqeust(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-/*
-type Manager struct {
-	cookieName  string     // private cookiename
-	lock        sync.Mutex // protects session
-	provider    Provider
-	maxLifeTime int64
-}
-
-type Provider interface {
-	SessionInit(sid string) (Session, error)
-	SessionRead(sid string) (Session, error)
-	SessionDestroy(sid string) error
-	SessionGC(maxLifeTime int64)
-}
-
-func (manager *Manager) SessionDestroy(w http.ResponseWriter, r *http.Request){
-	cookie, err := r.Cookie(manager.cookieName)
-	if err != nil || cookie.Value == "" {
-		return
-	} else {
-		manager.lock.Lock()
-		defer manager.lock.Unlock()
-		manager.provider.SessionDestroy(cookie.Value)
-		expiration := time.Now()
-		cookie := http.Cookie{Name: manager.cookieName, Path: "/", HttpOnly: true, Expires: expiration, MaxAge: -1}
-		http.SetCookie(w, &cookie)
-	}
-}
-
-func init() {
-	go globalSessions.GC()
-}
-
-func (manager *Manager) GC() {
-	manager.lock.Lock()
-	defer manager.lock.Unlock()
-	manager.provider.SessionGC(manager.maxLifeTime)
-	time.AfterFunc(time.Duration(manager.maxLifeTime), func() { manager.GC() })
-}
-
-type Session interface {
-	Set(key, value interface{}) error // set session value
-	Get(key interface{}) interface{}  // get session value
-	Delete(key interface{}) error     // delete session value
-	SessionID() string                // back current sessionID
-}
-
-var provides = make(map[string]Provider)
-
-// Register makes a session provide available by the provided name.
-// If Register is called twice with the same name or if driver is nil,
-// it panics.
-func Register(name string, provider Provider) {
-	if provider == nil {
-		panic("session: Register provider is nil")
-	}
-	if _, dup := provides[name]; dup {
-		panic("session: Register called twice for provider " + name)
-	}
-	provides[name] = provider
-}
-
-func (manager *Manager) sessionId() string {
-	b := make([]byte, 32)
-	if _, err := rand.Read(b); err != nil {
-		return ""
-	}
-	return base64.URLEncoding.EncodeToString(b)
-}
-
-func NewManager(provideName, cookieName string, maxLifeTime int64) (*Manager, error) {
-	provider, ok := provides[provideName]
-	if !ok {
-		return nil, fmt.Errorf("session: unknown provide %q (forgotten import?)", provideName)
-	}
-	return &Manager{provider: provider, cookieName: cookieName, maxLifeTime: maxLifeTime}, nil
-}
-
-func (manager *Manager) SessionStart(w http.ResponseWriter, r *http.Request) (session Session) {
-	manager.lock.Lock()
-	defer manager.lock.Unlock()
-	cookie, err := r.Cookie(manager.cookieName)
-	if err != nil || cookie.Value == "" {
-		sid := manager.sessionId()
-		session, _ = manager.provider.SessionInit(sid)
-		cookie := http.Cookie{Name: manager.cookieName, Value: url.QueryEscape(sid), Path: "/", HttpOnly: true, MaxAge: int(manager.maxLifeTime)}
-		http.SetCookie(w, &cookie)
-	} else {
-		sid, _ := url.QueryUnescape(cookie.Value)
-		session, _ = manager.provider.SessionRead(sid)
-	}
-	return
-}
-
-var globalSessions *session.Manager
-//然后在init函数中初始化
-func init() {
-	globalSessions, _ = NewManager("memory", "gosessionid", 3600)
-}
-*/
 
 var globalSessions *session.Manager
 
 //然后在init函数中初始化
-func init() {
+func inithttp() {
 	globalSessions, _ = session.NewManager("memory", "gosessionid", 3600)
 	go globalSessions.GC()
 }
@@ -151,9 +62,22 @@ func login(w http.ResponseWriter, r *http.Request) {
 	sess := globalSessions.SessionStart(w, r)
 	r.ParseForm()
 	if r.Method == "GET" {
+
+		h := md5.New()
+		crutime := time.Now().Unix()
+		io.WriteString(h, strconv.FormatInt(crutime, 10))
+		token := fmt.Sprintf("%x", h.Sum(nil))
+
 		t, _ := template.ParseFiles("login.gtpl")
+
+
+		//t, _ := template.ParseFiles("login.gtpl")
 		w.Header().Set("Content-Type", "text/html")
-		t.Execute(w, sess.Get("username"))
+
+		t.Execute(w, token)
+
+
+		//t.Execute(w, sess.Get("username"))
 	} else {
 		sess.Set("username", r.Form["username"])
 		http.Redirect(w, r, "/", 302)
@@ -198,6 +122,7 @@ func count(w http.ResponseWriter, r *http.Request) {
 }
 
 func HttpServer() {
+	inithttp()
 	http.HandleFunc("/", handlerReqeust) //设置访问的路由
 	http.HandleFunc("/login", login)     //设置访问的路由
 	http.HandleFunc("/count", count)

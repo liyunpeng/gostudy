@@ -6,11 +6,13 @@ import (
 	"my.study/auto"
 	"my.study/basic"
 	"my.study/btcoin"
+	gin1 "my.study/gin"
 	httpserver "my.study/http"
 	"my.study/net/client"
 	"my.study/net/server"
 	"my.study/nosql"
 	regexp1 "my.study/regexp"
+	rpc1 "my.study/rpc"
 	"my.study/sql"
 	template1 "my.study/template"
 	"os"
@@ -90,9 +92,21 @@ func main() {
 		template1.Template()
 		break
 
+	case "rpcserver":
+		rpc1.RpcServer()
+		break
+	case "rpcclient":
+		rpc1.Rpcclient()
+		break
+
 	case "regexp":
 		regexp1.Exp1()
 		break
+
+	case "gin":
+		gin1.Gin1()
+		break
+
 	default:
 		fmt.Println("cmd err,exit")
 		break
