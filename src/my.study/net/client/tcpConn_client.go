@@ -30,9 +30,6 @@ func ClientOnlySendReceiveTCPConn() {
 
 	sendtoNework(conn)
 
-
-
-
 	conn.CloseWrite()
 	wg.Wait()
 

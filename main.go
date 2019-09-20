@@ -6,6 +6,7 @@ import (
 	"my.study/auto"
 	"my.study/basic"
 	"my.study/btcoin"
+	context1 "my.study/context"
 	gin1 "my.study/gin"
 	httpserver "my.study/http"
 	"my.study/net/client"
@@ -106,7 +107,9 @@ func main() {
 	case "gin":
 		gin1.Gin1()
 		break
-
+	case "context":
+		context1.Context()
+		break
 	default:
 		fmt.Println("cmd err,exit")
 		break
