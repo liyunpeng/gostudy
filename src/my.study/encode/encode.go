@@ -1,4 +1,4 @@
-package basic
+package encode1
 
 import (
 	"encoding/json"
@@ -27,5 +27,13 @@ func lowercaseNotEncode() {
 func Encode() {
 	fmt.Println("<---------------------- Encode begin ---------------------->")
 	lowercaseNotEncode()
+	base641()
+	aes1()
+	aes2()
+
+	simple()
+	salt()
+	script()
+
 	fmt.Println("<---------------------- Encode end ---------------------->")
 }

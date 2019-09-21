@@ -7,8 +7,11 @@ import (
 	"my.study/basic"
 	"my.study/btcoin"
 	context1 "my.study/context"
+	"my.study/encode"
 	gin1 "my.study/gin"
 	httpserver "my.study/http"
+	"my.study/io"
+	locale1 "my.study/locale"
 	"my.study/net/client"
 	"my.study/net/server"
 	"my.study/nosql"
@@ -110,6 +113,14 @@ func main() {
 	case "context":
 		context1.Context()
 		break
+
+	case "encode":
+		encode1.Encode()
+		break
+
+	case "locale":
+		locale1.Locale()
+		break
 	default:
 		fmt.Println("cmd err,exit")
 		break
@@ -120,10 +131,10 @@ func main() {
 func base() {
 	basic.Base()
 	basic.Chan()
-	basic.Encode()
+	encode1.Encode()
 	basic.Go()
 	basic.Interface()
-	basic.Io()
+	io.Io()
 	basic.Map()
 	basic.Range()
 	basic.Reflect()
