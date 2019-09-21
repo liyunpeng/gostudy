@@ -12,6 +12,7 @@ import (
 	httpserver "my.study/http"
 	"my.study/io"
 	locale1 "my.study/locale"
+	log1 "my.study/log"
 	"my.study/net/client"
 	"my.study/net/server"
 	"my.study/nosql"
@@ -120,6 +121,9 @@ func main() {
 
 	case "locale":
 		locale1.Locale()
+		break
+	case "log":
+		log1.Log()
 		break
 	default:
 		fmt.Println("cmd err,exit")

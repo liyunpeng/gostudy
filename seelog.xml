@@ -1,0 +1,16 @@
+<seelog>
+    <outputs formatid="main">
+        <!--控制台打印info,debug,critical,error这些级别的log  -->
+        <filter levels="info,debug,critical,error">
+            <console/>
+        </filter>
+        <!-- 文件debug1.txt只打印info debug级别的log -->
+        <filter levels="info,debug,critical,error">
+            <file path="debug2.txt"/>
+            <file path="debug1.txt"/>
+        </filter>
+    </outputs>
+    <formats>
+        <format id="main" format="%Date/%Time [%LEV] %Msg%n"/>
+    </formats>
+</seelog>
