@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/cihub/seelog"
 	"log"
 	"my.study/auto"
 	"my.study/basic"
@@ -31,12 +32,20 @@ var help = func() {
 
 func init() {
 	log.SetFlags(log.Ldate | log.Ltime | log.LstdFlags)
+
+
 }
 
 func main() {
-	args := os.Args
+	logger, err := seelog.LoggerFromConfigAsFile("seelog.xml")
+	defer seelog.Flush()
+	if err != nil {
+		seelog.Critical("err parsing config log file", err)
+		return
+	}
+	seelog.ReplaceLogger(logger)
 
-	// TODO: 创建保存log的文件
+	args := os.Args
 	if len(args) < 1 || args == nil {
 		help()
 		return
@@ -157,4 +166,5 @@ func base() {
 	basic.Struct()
 	basic.Sync()
 	basic.Recover()
+	basic.Set1()
 }
