@@ -5,8 +5,10 @@ import (
 	"log"
 	"my.study/auto"
 	"my.study/basic"
+	beego1 "my.study/beego"
 	"my.study/btcoin"
 	context1 "my.study/context"
+	"my.study/distribute"
 	"my.study/encode"
 	gin1 "my.study/gin"
 	httpserver "my.study/http"
@@ -42,7 +44,6 @@ func main() {
 
 	switch args[1] {
 	case "gen":
-
 		auto.Genfile()
 		break
 	case "base":
@@ -125,6 +126,12 @@ func main() {
 	case "log":
 		log1.Log()
 		break
+	case "beego":
+		beego1.Beego1()
+		break
+	case "distribute":
+		distribute.Distribute()
+		break
 	default:
 		fmt.Println("cmd err,exit")
 		break
@@ -132,6 +139,7 @@ func main() {
 
 	//global.LoggerFile.Close()
 }
+
 func base() {
 	basic.Base()
 	basic.Chan()
@@ -148,4 +156,5 @@ func base() {
 	basic.String()
 	basic.Struct()
 	basic.Sync()
+	basic.Recover()
 }

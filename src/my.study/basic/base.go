@@ -2,7 +2,6 @@ package basic
 
 import (
 	"fmt"
-	"my.study/global"
 )
 
 
@@ -114,7 +113,7 @@ func assert1() {
 }
 
 func Base(){
-	global.Logger.Println("base")
+	Logger.Println("base")
 
 	fmt.Println("<--------------------- Base begin ----------------------->")
 

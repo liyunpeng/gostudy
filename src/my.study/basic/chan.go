@@ -2,7 +2,6 @@ package basic
 
 import (
 	"fmt"
-	"my.study/global"
 	"sync"
 )
 
@@ -161,7 +160,7 @@ func chanStddPrograme() {
 }
 func consumer2(routineId int, wq <-chan interface{}, done <-chan struct{}, wg *sync.WaitGroup) {
 	fmt.Printf("routine[%v]  is running\n", routineId)
-	global.Logger.Printf("[%v] is running\n", routineId)
+	Logger.Printf("[%v] is running\n", routineId)
 	/*
 		 defer 在本函数的结束前的最后一步调用， 但很多时候， 不能确定本函数在哪里结束
 	*/
@@ -184,10 +183,10 @@ func consumer2(routineId int, wq <-chan interface{}, done <-chan struct{}, wg *s
 		 */
 		case product := <-wq:
 			fmt.Printf("routine[%v] product[%v] is consumed \n", routineId, product)
-			global.Logger.Printf("routine[%v] product[%v] is consumed \n", routineId, product)
+			Logger.Printf("routine[%v] product[%v] is consumed \n", routineId, product)
 		case <-done:
 			fmt.Printf("[%v] is done\n", routineId)
-			global.Logger.Printf("[%v] is done\n", routineId)
+			Logger.Printf("[%v] is done\n", routineId)
 			return
 		}
 	}
