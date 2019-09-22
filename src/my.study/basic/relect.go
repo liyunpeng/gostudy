@@ -51,7 +51,10 @@ func reflect1(any interface{}){
 			// 无参数反射方法的调用
 			methodValue := value.MethodByName(method.Name)
 			args := make([]reflect.Value, 0)
-			methodValue.Call(args)  // 不管反射的方法有没有参数， 用call调用， 必须有个切片作为参数
+			/*
+				不管反射的方法有没有参数， 用call调用， 必须有个切片作为参数
+			 */
+			methodValue.Call(args)
 		}else if i == 1 {
 			methodValue := value.MethodByName(method.Name)
 			args := []reflect.Value{reflect.ValueOf(50)}

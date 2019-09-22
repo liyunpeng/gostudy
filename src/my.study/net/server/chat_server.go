@@ -60,8 +60,8 @@ func InputTimeout(c net.Conn, timeout time.Duration, input func(chan struct{}) (
 				timer.Reset(timeout)
 
 			case <-timer.C:
-				done <- struct{}{}  // 通道作为信号使用的写法， 空结构体
-				return  // 不是退出for, 而是退出了整个go routine函数
+				done <- struct{}{} // 通道作为信号使用的写法， 空结构体
+				return             // 不是退出for, 而是退出了整个go routine函数
 			}
 		}
 	}() // 启动routine，都是在调用函数，必须有这个圆括号
@@ -71,16 +71,16 @@ func InputTimeout(c net.Conn, timeout time.Duration, input func(chan struct{}) (
 		done <- struct{}{}
 	}()
 
-	<-done  // 写操作的routine和超时通道的routine 都会写这个done通道， 一个写了，这里就解除阻塞
+	<-done // 写操作的routine和超时通道的routine 都会写这个done通道， 一个写了，这里就解除阻塞
 }
 
-func debugLog(s string){
+func debugLog(s string) {
 	//  fmt.Println("[Debug] : ", s)  统一关闭调试打印
 }
 
 func handleConn1(c net.Conn) {
 
-	clientinfo := ClientInfo{make(chan string), ""}  //不能用new的范式， 不然clientChans[clientinfo]  找不到
+	clientinfo := ClientInfo{make(chan string), ""} //不能用new的范式， 不然clientChans[clientinfo]  找不到
 
 	debugLog(c.RemoteAddr().String())
 
@@ -89,7 +89,13 @@ func handleConn1(c net.Conn) {
 	go ouputToConnection(c, clientinfo.message)
 
 	clientinfo.message <- "input your name:"
-
+	/*
+	    问： NewScanner和newReader都是bufio构造了一个输入流， 两者有何不同
+		答： newscanner的源是随时输入的， 如标准输入，和客户端的输入， 客户端的输入就是连接客户端端的网络连接
+		这里就是net.conn.  这些都是输入源， 而且阻塞的，input.scan就会阻塞在这里， 有输入并且输入阻塞的，
+		用户按下回车键， input.text就返回
+		newreader的源就是固定， 一般是一个文件， 和一个字符串。因为没有客户输入， 所以没有scan阻塞函数， 而有直接读取数据的函数ureadline
+	*/
 	input := bufio.NewScanner(c)
 	inputC := func(sig chan struct{}) {
 		for i := 0; input.Scan(); i++ {

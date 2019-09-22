@@ -8,6 +8,7 @@ import (
 	"my.study/basic"
 	beego1 "my.study/beego"
 	"my.study/btcoin"
+	bufio1 "my.study/bufio"
 	context1 "my.study/context"
 	"my.study/distribute"
 	"my.study/encode"
@@ -15,7 +16,6 @@ import (
 	httpserver "my.study/http"
 	"my.study/io"
 	locale1 "my.study/locale"
-	log1 "my.study/log"
 	"my.study/net/client"
 	"my.study/net/server"
 	"my.study/nosql"
@@ -132,14 +132,16 @@ func main() {
 	case "locale":
 		locale1.Locale()
 		break
-	case "log":
-		log1.Log()
-		break
+
 	case "beego":
 		beego1.Beego1()
 		break
 	case "distribute":
 		distribute.Distribute()
+		break
+
+	case "bufio":
+		bufio1.Reader()
 		break
 	default:
 		fmt.Println("cmd err,exit")
