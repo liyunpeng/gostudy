@@ -11,6 +11,7 @@ import (
 	bufio1 "my.study/bufio"
 	context1 "my.study/context"
 	"my.study/distribute"
+	elasticesearch1 "my.study/elasticesearch"
 	"my.study/encode"
 	gin1 "my.study/gin"
 	httpserver "my.study/http"
@@ -143,6 +144,19 @@ func main() {
 	case "bufio":
 		bufio1.Reader()
 		break
+
+	case "es":
+		elasticesearch1.Es()
+		break
+
+	case "es2":
+		elasticesearch1.Es2()
+		break
+
+	case "proto":
+		encode1.Protobuf()
+		break
+
 	default:
 		fmt.Println("cmd err,exit")
 		break
