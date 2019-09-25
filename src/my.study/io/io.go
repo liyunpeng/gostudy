@@ -34,9 +34,6 @@ func writestring()  {
 
 	io.WriteString(os.Stdout, "1234567890123456")
 	io.WriteString(os.Stdout, "12345678901234561234567890123456")
-
-
-
 }
 
 func Io(){

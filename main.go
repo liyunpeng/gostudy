@@ -24,6 +24,7 @@ import (
 	rpc1 "my.study/rpc"
 	"my.study/sql"
 	template1 "my.study/template"
+	xorm1 "my.study/xorm"
 	"os"
 )
 
@@ -157,6 +158,17 @@ func main() {
 		encode1.Protobuf()
 		break
 
+	case "xorm":
+		xorm1.Xorm1()
+		break
+
+	//case "kafkas":
+	//	kafka1.Kafkaserver()
+	//	break
+	//
+	//case "kafkac":
+	//	kafka1.KafkaClient()
+	//	break
 	default:
 		fmt.Println("cmd err,exit")
 		break
@@ -172,7 +184,7 @@ func base() {
 	basic.Go()
 	basic.Interface()
 	io.Io()
-	basic.Map()
+	basic.Map1()
 	basic.Range()
 	basic.Reflect()
 	basic.Runtime()

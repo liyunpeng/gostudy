@@ -10,7 +10,7 @@ var (
 	wg sync.WaitGroup
 )
 
-func main() {
+func KafkaClient() {
 	// 根据给定的代理地址和配置创建一个消费者
 	consumer, err := sarama.NewConsumer([]string{"localhost:9092"}, nil)
 	if err != nil {

@@ -26,11 +26,51 @@ func map1() {
 	fmt.Printf("%v", m)
 }
 
-func Map()  {
+func map3(){
+
+	m1 := map[string]string{"key1":"value1", "key2":"value2"}
+
+	m2 := map[string]string{"key1":"value1", "key2":"value2"}
+
+	/*
+	map  不能比较
+	if m1 == m2 {
+		fmt.Println("m1 == m2")
+	}
+	*/
+
+	fmt.Println("map  不能比较", m1, m2)
+	/*
+	这种对map的赋值没有问题
+	 */
+	s1 := struct{
+		age int
+		m map[string]string
+	}{age:1, m: map[string]string{"key1":"value1"}}
+
+	s2 := struct{
+		age int
+		m map[string]string
+	}{age:1, m: map[string]string{"key1":"value1"}}
+
+/*
+结构体里右map, 这个接头体也不能比较
+	if( s1 == s2){
+		fmt.Println("s1 == s2")
+	}
+*/
+	fmt.Println("结构体力的map也不能比较", s1, s2)
+}
+
+
+func Map1() {
 	fmt.Println("<-------------------------- Map begin ---------------------->")
 
 	map1()
 
 	map2()
+
+	map3()
+
 	fmt.Println("<-------------------------- Map begin ---------------------->")
 }
