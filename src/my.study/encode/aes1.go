@@ -9,14 +9,20 @@ import (
 
 func aes2() {
 	/*
-		key必须是16、24或者32位的[]byte，分别对应AES-128, AES-192或AES-256算法
+		key必须是16、
+		24或者32位的[]byte，
+		分别对应AES-128,
+		AES-192或AES-256算法
 	*/
 	//设置私钥
 	key := []byte("1234567890123456")
+
 	//明文
 	origData := []byte("hello world")
+
 	//加密
 	en := AESEncrypt(origData, key)
+
 	//解密
 	de := AESDecrypt(en, key)
 	fmt.Println(string(de))
@@ -44,12 +50,16 @@ func PKCS7UnPadding(origData []byte) []byte {
 func AESEncrypt(origData, key []byte) []byte {
 	//获取block块
 	block, _ := aes.NewCipher(key)
+
 	//补码
 	origData = PKCS7Padding(origData, block.BlockSize())
+
 	//加密模式，
 	blockMode := cipher.NewCBCEncrypter(block, key[:block.BlockSize()])
+
 	//创建明文长度的数组
 	crypted := make([]byte, len(origData))
+
 	//加密明文
 	blockMode.CryptBlocks(crypted, origData)
 	return crypted

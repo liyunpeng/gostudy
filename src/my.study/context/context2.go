@@ -17,7 +17,11 @@ func work(ctx context.Context) error {
 	for i := 0; i < 1000; i++ {
 		select {
 		/*
-			time.After是系统的定时器，指定多少时间就会在指定的时间发送这个解除读阻塞的动作， 基本所有阻塞都是管道的阻塞
+			time.After是系统的定时器，
+			指定多少时间就会在指定的时间发送这
+
+			个解除读阻塞的动作，
+			基本所有阻塞都是管道的阻塞
 		*/
 		case <-time.After(2 * time.Second):
 			fmt.Println("Doing some work ", i)

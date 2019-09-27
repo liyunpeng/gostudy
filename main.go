@@ -16,6 +16,7 @@ import (
 	gin1 "my.study/gin"
 	httpserver "my.study/http"
 	"my.study/io"
+	kafka1 "my.study/kafka"
 	locale1 "my.study/locale"
 	"my.study/net/client"
 	"my.study/net/server"
@@ -35,11 +36,13 @@ var help = func() {
 func init() {
 	log.SetFlags(log.Ldate | log.Ltime | log.LstdFlags)
 
-
 }
 
 func main() {
 	logger, err := seelog.LoggerFromConfigAsFile("seelog.xml")
+	/*
+		决定了所有seelog 在main结束时输出，控制台的随州输出seelog
+	 */
 	defer seelog.Flush()
 	if err != nil {
 		seelog.Critical("err parsing config log file", err)
@@ -162,13 +165,13 @@ func main() {
 		xorm1.Xorm1()
 		break
 
-	//case "kafkas":
-	//	kafka1.Kafkaserver()
-	//	break
-	//
-	//case "kafkac":
-	//	kafka1.KafkaClient()
-	//	break
+	case "kafkas":
+		kafka1.Kafkaserver()
+		break
+
+	case "kafkac":
+		kafka1.KafkaClient()
+		break
 	default:
 		fmt.Println("cmd err,exit")
 		break
@@ -195,4 +198,8 @@ func base() {
 	basic.Sync()
 	basic.Recover()
 	basic.Set1()
+
+	basic.ArrraySlice()
+	basic.Defer()
+	basic.Type1()
 }

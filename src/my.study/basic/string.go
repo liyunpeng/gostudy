@@ -27,6 +27,22 @@ func compareString() {
 	//prints: data == decoded: false (not ok)
 }
 
-func String(){
+func changeChar() {
+	/*
+		go中string是常量，只能用双引号来表示。
+		a := "this is string"
+		a[0] = 'c' (这个是错误的，会报错)
+		如果要做改变某个字符的操作应该先将string转换为byte数组：
+	*/
+	a := "this is string"
+	c := []byte(a)
+	c[0] = 'c'
+	d := string(c)
+	fmt.Println(d)
+}
+
+func String() {
 	compareString()
+
+	changeChar()
 }

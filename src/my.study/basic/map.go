@@ -62,7 +62,6 @@ func map3(){
 	fmt.Println("结构体力的map也不能比较", s1, s2)
 }
 
-
 func Map1() {
 	fmt.Println("<-------------------------- Map begin ---------------------->")
 
