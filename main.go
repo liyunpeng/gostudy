@@ -33,9 +33,13 @@ var help = func() {
 	fmt.Println("help")
 }
 
+/*
+一个包可以出线多个 init() 函数,一个源文件也可以包含多个 init() 函数；
+init() 函数在代码中不能被显示调用、不能被引用（赋值给函数变量），否则出现编译错误;
+一个包被引用多次，如 A import B,C import B,A import C，B 被引用多次，但 B 包只会初始化一次；
+ */
 func init() {
 	log.SetFlags(log.Ldate | log.Ltime | log.LstdFlags)
-
 }
 
 func main() {
@@ -163,8 +167,6 @@ func main() {
 		fmt.Println("cmd err,exit")
 		break
 	}
-
-	//global.LoggerFile.Close()
 }
 
 func base() {

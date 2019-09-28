@@ -89,7 +89,7 @@ func jsonUnencode() {
 		接收字符串的参数，都是要把字符串转换为byte数组，这里的反序列化的Unmarshal也不例外
 	 */
 	err := json.Unmarshal([]byte(data), p)
-	
+
 	fmt.Println(err)
 	fmt.Println(*p)
 	/*

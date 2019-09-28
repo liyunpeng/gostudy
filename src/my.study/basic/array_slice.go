@@ -6,7 +6,7 @@ import "fmt"
 new([]int) 之后的 list 是一个 *[]int 类型的指针，
 不能对指针执行 append 操作。可以使用 make() 初始化之后再用。
 同样的，map 和 channel 建议使用 make() 或字面量的方式初始化，不要用 new() 。
-所以下面蛮熟不能编译通过
+所以下面代码不能编译通过
 func list1(){
 	list := new([]int)
 	list = append(list, 1)
@@ -51,7 +51,7 @@ func array() {
 	fmt.Println(s1, "len=", len(s1), "cap=", cap(s1))
 
 	/*
-		对切片扩容时， 只有append， 符合go的一件事只有一个方法
+		对切片扩容时， 只有append， 符合go的一件事只有一个方法的风格
 	*/
 	s1 = append(s1, 100)
 
@@ -73,7 +73,9 @@ func updateArraypointer(s *[10]int) {
 }
 
 /*
-	调用的时候，入参只能是slice
+	这样声明的函数，调用的时候，入参只能是slice，不能是数组
+	在Go语言中，函数参数是按值传递的。当使用切片(slice)作为函数参数时，
+	意味着函数将获得切片的副本：指向基础数组的起始地址的指针，以及切片的长度和容量
 */
 func updateSlice(s []int) {
 	s[0] = 666
@@ -99,11 +101,6 @@ func rangeBak() {
 	}
 }
 
-/*
-输出：
-[0 0 0 0 0 1 2 3]
-*/
-
 func slice1() {
 	s := make([]int, 5)
 	/*
@@ -111,33 +108,68 @@ func slice1() {
 	*/
 	s = append(s, 1, 2, 3)
 	fmt.Println(s)
+	/*
+		输出：
+		[0 0 0 0 0 1 2 3]
+	*/
 }
 
-/*
-输出：
-[1 2 3 4]
-*/
 func slice2() {
 	s := make([]int, 0)
 	s = append(s, 1, 2, 3, 4)
 	fmt.Println(s)
+	/*
+		输出：
+		[1 2 3 4]
+	*/
 }
 
-/*
-new(T) 和 make(T,args) 是 Go 语言内建函数，用来分配内存，但适用的类型不同。
+func multiPara(num ...int) {
+	num[0] = 18
+}
 
-new(T) 会为 T 类型的新值分配已置零的内存空间，并返回地址（指针），
-即类型为 *T 的值。换句话说就是，
-返回一个指针，该指针指向新分配的、类型为 T 的零值。
-适用于值类型，如数组、结构体等。
+func testmultiPara() {
+	i := []int{5, 6, 7}
+	multiPara(i...)
+	fmt.Println(i[0])
 
-make(T,args) 返回初始化之后的 T 类型的值，
-这个值并不是 T 类型的零值，也不是指针 *T，是经过初始化之后的 T 的引用。make()
-只适用于 slice、map 和 channel.
-*/
+	/*
+		切片可以作为多参数传入， 但数组不行， 如下程序编译报错
+		j := [5]int{1, 2, 3}
+		multiPara(j...)
+	*/
+}
+
+func addValue(s *[]int) {
+	/*
+		apppend函数返回的已经不是传入的slice的指针了， 是一个新指针，
+		为了能返回这个新指针， 就把入参定义为切片指针 *[]int， 即指向切片的指针
+		*s = 这样的赋值，是把指针的地址改了，即是一个新指针了
+	 */
+	*s = append(*s, 3)
+	fmt.Printf("In addValue: s is %v\n", s)
+}
+
+func addValuetest() {
+	s := []int{1, 2}
+	fmt.Printf("In main, before addValue: s is %v\n", s)
+	addValue(&s)
+	fmt.Printf("In main, after addValue: s is %v\n", s)
+	/*
+		结果：
+		In main, before addValue: s is [1 2]
+		In addValue: s is &[1 2 3]
+		In main, after addValue: s is [1 2 3]
+	 */
+}
+
 func ArrraySlice() {
 	fmt.Println("<-------------------------ArrraySlice begin -------------------> ")
 	array()
 	rangeBak()
+	slice1()
+	slice2()
+	testmultiPara()
+	addValuetest()
 	fmt.Println("<-------------------------ArrraySlice end -------------------> ")
 }

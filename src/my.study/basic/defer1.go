@@ -15,11 +15,50 @@ func defer_call() {
 	*/
 	defer func() { fmt.Println("打印前") }()
 	defer func() { fmt.Println("打印中") }()
-	defer func() { fmt.Println("打印后") }()
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Println("panic在此得到处理， 不会使程序崩溃")
+		}
+		fmt.Println("打印后") }()
 	panic("触发异常")
+	//defer_call()
+}
+
+func f(n int) (r int) {
+	defer func() {
+		fmt.Println("c")
+		r += n
+		/*
+			因为第一个defer抛出了一个panic, recover是专门接收panic的
+		*/
+		recover()
+	}()
+
+	var f func()
+
+	/*
+		局部变量f在defer后面定义， 所以不被执行
+		因为没有定义， 所以这里会出一个panic
+		发生了panic， defer也是是按顺序执行
+	*/
+	defer f()
+
+	f = func() {
+		r += 2
+		fmt.Println("b")
+	} // f 只是定义，没有小括号， 所以没被执行
+
+	fmt.Println("a")
+	/*
+		这里先返回了， 这时r是4，但返回这个4，虽然返回，但不是真返回， 因为f还没真正结束，
+		所以这个返回值也不是调用者接收的，
+		本函数的所有的defer执行完了才算真正的返回， 所以是7
+	*/
+	return n + 1
 }
 
 func Defer() {
+	fmt.Println(f(3))
 
 	defer_call()
 }
