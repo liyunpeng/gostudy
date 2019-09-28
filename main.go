@@ -111,64 +111,51 @@ func main() {
 	case "template":
 		template1.Template()
 		break
-
 	case "rpcserver":
 		rpc1.RpcServer()
 		break
 	case "rpcclient":
 		rpc1.Rpcclient()
 		break
-
 	case "regexp":
 		regexp1.Exp1()
 		break
-
 	case "gin":
 		gin1.Gin1()
 		break
 	case "context":
 		context1.Context()
 		break
-
 	case "encode":
 		encode1.Encode()
 		break
-
 	case "locale":
 		locale1.Locale()
 		break
-
 	case "beego":
 		beego1.Beego1()
 		break
 	case "distribute":
 		distribute.Distribute()
 		break
-
 	case "bufio":
 		bufio1.Reader()
 		break
-
 	case "es":
 		elasticesearch1.Es()
 		break
-
 	case "es2":
 		elasticesearch1.Es2()
 		break
-
 	case "proto":
 		encode1.Protobuf()
 		break
-
 	case "xorm":
 		xorm1.Xorm1()
 		break
-
 	case "kafkas":
 		kafka1.Kafkaserver()
 		break
-
 	case "kafkac":
 		kafka1.KafkaClient()
 		break

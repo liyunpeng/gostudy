@@ -13,7 +13,7 @@ func base64Decode(src []byte) ([]byte, error) {
 	return base64.StdEncoding.DecodeString(string(src))
 }
 
-func base641() {
+func Base64Encode() {
 	// encode
 	hello := "你好，世界！ hello world"
 	debyte := base64Encode([]byte(hello))

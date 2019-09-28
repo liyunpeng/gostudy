@@ -8,9 +8,6 @@ import (
 	"os"
 	"sync"
 )
-//func ClientOnlySendReceiveNonTCPConn() {
-//	ClientOnlySendReceiveNonTCPConn("localhost")
-//}
 
 func ClientOnlySendReceiveNonTCPConn(address string) {
 	fmt.Println("server address: ", address)

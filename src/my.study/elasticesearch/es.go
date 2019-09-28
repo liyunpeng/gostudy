@@ -49,7 +49,9 @@ func init1() {
 func create() {
 
 	//使用结构体
-	e1 := Employee{"Jane", "Smith", 32, "I like to collect rock albums", []string{"music"}}
+	e1 := Employee{"Jane", "Smith",
+		32, "I like to collect rock albums",
+		[]string{"music"}}
 	put1, err := client.Index().
 		Index("megacorp").
 		Type("employee").

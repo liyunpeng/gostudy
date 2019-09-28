@@ -30,6 +30,15 @@ func type1() {
 	fmt.Println( i2)
 }
 
+
+func type2(){
+	type t1 [10]int
+	var s t1
+	fmt.Println(s)
+}
 func Type1() {
+	fmt.Println("<----------------------------- Type begin ---------------------------->")
 	type1()
+	type2()
+	fmt.Println("<----------------------------- Type end ---------------------------->")
 }
