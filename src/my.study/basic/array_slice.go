@@ -124,6 +124,9 @@ func slice2() {
 	*/
 }
 
+/*
+	可变参数函数
+ */
 func multiPara(num ...int) {
 	num[0] = 18
 }

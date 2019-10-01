@@ -83,6 +83,27 @@ func do(i interface{}) {
 	}
 }
 
+func assert1() {
+	/*
+	  var data interface{} = "great"
+	    if data, ok := data.(int); ok {  // data类型转换失败，被赋值为0
+	        fmt.Println("[is an int] value =>",data)
+	    } else {
+	        fmt.Println("[not an int] value =>",data)
+	        //prints: [not an int] value => 0 (not "great")
+	    }
+
+	*/
+	var data interface{} = "great"
+	if res, ok := data.(int); ok {  // 要用res返回， 不然panic出现
+		fmt.Println("[is an int] value =>", res)
+	} else {
+		fmt.Println("[not an int] value =>", data)
+		//prints: [not an int] value => great (as expected)
+	}
+}
+
+
 func Interface() {
 	fmt.Println("<--------------------------- Interface begin ------------------->")
 	newCall()
@@ -91,5 +112,7 @@ func Interface() {
 	do(21)
 	do("multiPara")
 	do(true)
+
+	assert1()
 	fmt.Println("<--------------------------- Interface end ------------------->")
 }

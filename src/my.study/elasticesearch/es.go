@@ -122,12 +122,15 @@ func update() {
 //查找
 func gets() {
 	//通过id查找
-	get1, err := client.Get().Index("megacorp").Type("employee").Id("2").Do(context.Background())
+	get1, err := client.Get().
+		Index("megacorp").Type("employee").
+		Id("2").Do(context.Background())
 	if err != nil {
 		panic(err)
 	}
 	if get1.Found {
-		fmt.Printf("Got document %s in version %d from index %s, type %s\n", get1.Id, get1.Version, get1.Index, get1.Type)
+		fmt.Printf("Got document %s in version %d from index %s, type %s\n",
+			get1.Id, get1.Version, get1.Index, get1.Type)
 	}
 }
 

@@ -46,7 +46,9 @@ func broadcast() {
 func InputTimeout(c net.Conn, timeout time.Duration, input func(chan struct{}) ()) {
 	// 一个回车后写done通道， 一个超时后写done通道
 	done := make(chan struct{})
-	// 客户端每次输入前，写设个sig通道， 这样读sig通道的地方会重新计时， 达到每次输入等待时间限定指定时间内
+	// 客户端每次输入前，写设个sig通道，
+	// 这样读sig通道的地方会重新计时，
+	// 达到每次输入等待时间限定指定时间内
 	sig := make(chan struct{})
 	go func() {
 		timer := time.NewTimer(timeout)

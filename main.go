@@ -170,7 +170,7 @@ func main() {
 }
 
 func base() {
-	basic.Base()
+	basic.BitOperation()
 	basic.Chan()
 	encode1.Encode()
 	basic.Go()
@@ -191,4 +191,8 @@ func base() {
 	basic.ArrraySlice()
 	basic.Defer()
 	basic.Type1()
+
+	basic.IfSwitch()
+	basic.BitOperation()
+	basic.VarConst()
 }
