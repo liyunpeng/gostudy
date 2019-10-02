@@ -103,6 +103,18 @@ func assert1() {
 	}
 }
 
+func nil2() {
+	var i interface{}
+	/*
+		当且仅当接口的动态值和动态类型都为 nil 时，接口类型值才为 nil。
+	*/
+	if i == nil {
+		fmt.Println("nil")
+		return
+	}
+	fmt.Println("not nil")
+}
+
 
 func Interface() {
 	fmt.Println("<--------------------------- Interface begin ------------------->")
@@ -114,5 +126,7 @@ func Interface() {
 	do(true)
 
 	assert1()
+
+	nil2()
 	fmt.Println("<--------------------------- Interface end ------------------->")
 }
