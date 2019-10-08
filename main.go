@@ -195,4 +195,5 @@ func base() {
 	basic.IfSwitch()
 	basic.BitOperation()
 	basic.VarConst()
+	basic.Closer1()
 }

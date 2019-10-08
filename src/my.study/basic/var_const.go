@@ -110,4 +110,10 @@ func VarConst()  {
 
 	m := []int{7, 8, 9}
 	TestMultiPara(5, m...)
+
+	/*
+		整形转为字符串的方法
+	 */
+	i := 65
+	fmt.Println(string(i))
 }

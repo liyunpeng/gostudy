@@ -65,4 +65,3 @@ func sendtoNework(c net.Conn){
 	}
 	fmt.Println("send data to network connection finished \n")
 }
-

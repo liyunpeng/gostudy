@@ -24,6 +24,7 @@ func map1() {
 	r.name = "two"
 	m["x"] = r
 	fmt.Printf("%v", m)
+
 }
 
 func map3() {
@@ -77,6 +78,18 @@ func map4() {
 	fmt.Println(m[p])
 }
 
+func mapIf()  {
+	m := make(map[string]int)
+	m["a"] = 1
+	/*
+		v,k := m["b"] 当 key 为 b 的元素不存在的时候，
+		v 会返回值类型对应的零值，k 返回 false。
+		以下是判断键是否存在胡标准写法
+	*/
+	if v, ok := m["b"]; ok {
+		fmt.Println(v)
+	}
+}
 func Map1() {
 	fmt.Println("<-------------------------- Map begin ---------------------->")
 

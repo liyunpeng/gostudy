@@ -42,10 +42,7 @@ func struct1() {
 	//prints num=7 key=v.key items=map[vmethod:true]
 }
 
-
-
 func compare() {
-
 	type dataStruct struct {
 		num     int
 		fp      float32

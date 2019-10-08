@@ -95,6 +95,7 @@ func assert1() {
 
 	*/
 	var data interface{} = "great"
+	// data.(int) 是个类型断言
 	if res, ok := data.(int); ok {  // 要用res返回， 不然panic出现
 		fmt.Println("[is an int] value =>", res)
 	} else {

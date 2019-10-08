@@ -212,6 +212,67 @@ func makeNon() {
 	delete(s, "h")
 	fmt.Println(s["h"])
 }
+/*
+nil 切片和空切片。nil 切片和 nil 相等，
+一般用来表示一个不存在的切片；
+空切片和 nil 不相等，表示一个空的集合。
+*/
+func nil1() {
+	//var s1 []int
+	var s2 = []int{}
+	if s2 == nil {
+		fmt.Println("yes nil")
+	}else{
+		fmt.Println("no nil")
+	}
+}
+
+/*
+	对于make slice而言，有两个概念需要搞清楚：长度跟容量。
+	容量表示底层数组的大小，长度是你可以使用的大小。
+	容量的用处在哪？在与当你用 appen d扩展长度时，
+	如果新的长度小于容量，不会更换底层数组，否则，go 会新申请一个底层数组，
+	拷贝这边的值过去，把原来的数组丢掉。也就是说，容量的用途是：
+	在数据拷贝和内存申请的消耗与内存占用之间提供一个权衡。
+	而长度，则是为了帮助你限制切片可用成员的数量，提供边界查询的。
+	所以用 make 申请好空间后，需要注意不要越界【越 len 】
+ */
+
+/*
+	数组或切片的截取操作。截取操作有带 2 个或者 3 个参数，形如：[i:j] 和 [i:j:k]，
+	从数组里取出胡切片和原数组共用,
+	原数组的容量决定了切片的容量不会大于原数组的容量, 除非切片apped扩容了, 有了的校报的地址
+	容量是批总的容量, 面不剩余的容量
+	容量用在, append时, 是否要申请新的连续内存
+
+	假设截取对象的基础数组长度为 l。
+	对于操作符 [i:j]: 截取后的元素, 包括i, 包括j-1, 不包括j
+	如果 i 省略，i 就默认 0，
+	如果 j 省略，j 就默认为底层数组的长度，
+	截取得到的切片长度和容量计算方法是 j-i、l-i。
+
+	对于操作符 [i:j:k]，
+	k用来限制切片的容量，但是不能大于数组的长度 l，
+	截取得到的切片长度和容量计算方法是 j-i、k-i。
+ */
+func sliceLenCap() {
+	s := [3]int{5, 6, 7}
+	a := s[:0]
+	fmt.Println("a=", a,  ", len(a)=", len(a), ", cap(a)=", cap(a))
+	b := s[:2]  // 从0开始索引, 取到的是第0个, 和第1个, 即5, 6
+	fmt.Println("b=", b, ", len(b)=", len(b), ", cap(b)=", cap(b))
+	c := s[1:2:cap(s)]
+	fmt.Println("c=", c, ", len(c)=", len(c), ", cap(c)=", cap(c))
+	b[0] = 10
+	fmt.Println("s=", s)
+/*
+结果:
+   a= [] , len(a)= 0 , cap(a)= 3
+   b= [5 6] , len(b)= 2 , cap(b)= 3
+   c= [6] , len(c)= 1 , cap(c)= 2
+   s= [10 6 7]
+ */
+}
 
 func ArrraySlice() {
 	fmt.Println("<-------------------------ArrraySlice begin -------------------> ")
@@ -223,5 +284,7 @@ func ArrraySlice() {
 	addValuetest()
 	makeNon()
 	sliceExtract()
+	nil1()
+	sliceLenCap()
 	fmt.Println("<-------------------------ArrraySlice end -------------------> ")
 }

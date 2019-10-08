@@ -63,7 +63,6 @@ func reflect1(any interface{}){
 	}
 }
 
-
 func Testreflect(){
 	user := User{1, "abc"}
 	fmt.Printf("user: %#v \n", user)
@@ -79,7 +78,3 @@ func Reflect(){
 	fmt.Println("\n<------------------------------Reflect end ------------->")
 
 }
-	
-
-
-

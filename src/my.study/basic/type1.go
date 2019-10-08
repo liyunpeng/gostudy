@@ -30,7 +30,6 @@ func type1() {
 	fmt.Println( i2)
 }
 
-
 func type2(){
 	type t1 [10]int
 	var s t1

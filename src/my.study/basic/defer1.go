@@ -19,9 +19,62 @@ func defer_call() {
 		if err := recover(); err != nil {
 			fmt.Println("panic在此得到处理， 不会使程序崩溃")
 		}
-		fmt.Println("打印后") }()
+		fmt.Println("打印后")
+	}()
 	panic("触发异常")
 	//defer_call()
+}
+
+func closerReference() (r int) {
+	/*
+		闭包引用， 修改了外部变量r，这个变量是返回值变量，
+		所以返回值在defer里被修改
+	 */
+	defer func() {
+		r++
+	}()
+	return 0
+}
+
+func closerReferenceBackup() (r int) {
+	t := 5
+	/*
+		r是t的拷贝， 而且这个拷贝的时间发生在defer之前，
+		这又是一种defer前做的事情。 defer前除了return, 其他事情全做了， 返回值是变量的拷贝也在这个范围内
+		所以虽然是闭包引用， 但这个引用的不是返回值，而是返回值的副本，并不能改到返回值本身
+		所以返回值在defer里没被修改
+	 */
+	defer func() {
+		t = t + 5
+	}()
+	return t
+}
+
+func pamaeter() (r int) {
+	/*
+		defer修改的是参数r, 并不是外部返回值变量r,
+		所以返回值在defer里没被修改
+	 */
+	defer func(r int) {
+		r = r + 5
+	}(r)
+	return 1
+}
+
+/*
+	defer里修改外部参数
+ */
+func testCloserReferenceDefer(){
+	/*
+		通过闭包引用修改外部参数
+	 */
+	closerReference()
+	closerReferenceBackup()
+
+	/*
+		入参修改
+	 */
+	pamaeter()
 }
 
 func f(n int) (r int) {
@@ -61,4 +114,6 @@ func Defer() {
 	fmt.Println(f(3))
 
 	defer_call()
+
+	testCloserReferenceDefer()
 }

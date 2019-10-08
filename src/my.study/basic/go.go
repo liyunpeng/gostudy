@@ -2,7 +2,6 @@ package basic
 
 import (
 	"fmt"
-	"time"
 )
 
 func go1() {
@@ -12,7 +11,7 @@ func go1() {
 			fmt.Println(v)
 		}()
 	}
-	time.Sleep(3 * time.Second)
+	//time.Sleep(3 * time.Second)
 	//goroutines print: three, three, three
 }
 
@@ -24,7 +23,7 @@ func go2() {
 			fmt.Println(vcopy)
 		}()
 	}
-	time.Sleep(3 * time.Second)
+	//time.Sleep(1 * time.Second)
 	//goroutines print: one, two, three
 }
 
@@ -46,10 +45,10 @@ func go3() {
 	fmt.Println("go3 done!")
 }
 func Go() {
-	fmt.Print("<-------------------------- Go begin -------------------->")
+	fmt.Println("<-------------------------- Go begin -------------------->")
 	defer1()
 	go1()
 	go2()
 	go3()
-	fmt.Print("<-------------------------- Go end -------------------->")
+	fmt.Println("<-------------------------- Go end -------------------->")
 }

@@ -27,5 +27,4 @@ func switch11() {
 
 func IfSwitch()  {
 	switch11()
-
 }

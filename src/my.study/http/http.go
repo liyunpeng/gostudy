@@ -70,8 +70,6 @@ func login(w http.ResponseWriter, r *http.Request) {
 
 		t, _ := template.ParseFiles("login.gtpl")
 
-
-		//t, _ := template.ParseFiles("login.gtpl")
 		w.Header().Set("Content-Type", "text/html")
 
 		t.Execute(w, token)
@@ -99,6 +97,9 @@ func count(w http.ResponseWriter, r *http.Request) {
 	createtime := sess.Get("createtime")
 	if createtime == nil {
 		sess.Set("createtime", time.Now().Unix())
+		/*
+		SESSION 超时的处理， session 超过时间， 直接销毁
+		 */
 	} else if (createtime.(int64) + 360) < (time.Now().Unix()) {
 		globalSessions.SessionDestroy(w, r)
 		sess = globalSessions.SessionStart(w, r)
@@ -113,7 +114,7 @@ func count(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 
 	timeLayout := "2006-01-02 15:04:05"
-	s1 := "countnum=" + strconv.Itoa(sess.Get("countnum").(int)) +  ",  \n"
+	s1 := "session countnum=" + strconv.Itoa(sess.Get("countnum").(int)) +  ",  \n"
 	//s3 := time.Unix(sess.Get("createtime").(int64), 0).Format(timeLayout)
 
 	s2 := "session createtime="+ time.Unix(sess.Get("createtime").(int64), 0).Format(timeLayout) +", \n "

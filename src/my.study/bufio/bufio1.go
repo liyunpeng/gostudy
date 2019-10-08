@@ -118,7 +118,8 @@ func reader2() {
 	sr := strings.NewReader("ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
 	/*
 		将 io.Reader对象 封装成一个带缓存的 bufio.Reader 对象，
-		缓存大小由 size 指定（如果小于 16 则会被设置为 16）。 这里写0， 实际就是16个字节的缓冲区
+		缓存大小由 size 指定（如果小于 16 则会被设置为 16）。
+		这里写0， 实际就是16个字节的缓冲区
 	*/
 	buf := bufio.NewReaderSize(sr, 0)
 
