@@ -51,7 +51,8 @@ func writeTwoChan() {
 		没有输出 processed: cmd.2
 		原因是在主程序在写了管道之后， routine的读管道的阻塞的解除是需要一点时间的，
 		而主程序在写完管道后，输出一条语句后，就直接退除了，也就失去了对控制台的输出权利
-		这时routine再向控制台输出时，控制台是接收不到的。 想看到routine的完整输出打印，有两个办法
+		这时routine再向控制台输出时，控制台是接收不到的。 
+		想看到routine的完整输出打印，有两个办法
 		一是在最后一个写管道后等待两秒，即添加
 		time.Sleep(2*time.Second)
 		另一种办法是把输出的log打印到文件里，即在routine里用下面语句打印：
@@ -72,11 +73,15 @@ func closeChan() {
 	go func() {
 		/*
 			这是bug1,
-			原因：从<- done routine exit没有打印出来，可以断定此routine在主程序退出前没有结束，
-			通过实验得知， close(done)能够解除所有读done通道的阻塞操作，但是稍微会晚一点时间，1秒左右的时间， 但是主程序退出了
-			导致1秒后routine的读done通道阻塞解除时， 主程序已经结束了，对控制台的输出就结束了，导致routine不能向控制台输出。
+			原因：从<- done routine exit没有打印出来，
+			可以断定此routine在主程序退出前没有结束，
+			通过实验得知， close(done)能够解除所有读done通道的阻塞操作，
+			但是稍微会晚一点时间，1秒左右的时间， 但是主程序退出了
+			导致1秒后routine的读done通道阻塞解除时， 主程序已经结束了，
+			对控制台的输出就结束了，导致routine不能向控制台输出。
 			所以close通道， 能解除routine里读通道的阻塞，只是时间稍微延后
-			为了能从log判断出routine是否正常退出，每个routine的结尾都要打印一个结束log info，不是只有在debug时才打开的log.
+			为了能从log判断出routine是否正常退出，
+			每个routine的结尾都要打印一个结束log info，不是只有在debug时才打开的log.
 		*/
 		<-done
 		fmt.Println("<- done closeChan routine exit")

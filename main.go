@@ -14,6 +14,7 @@ import (
 	elasticesearch1 "my.study/elasticesearch"
 	"my.study/encode"
 	gin1 "my.study/gin"
+	gopoll "my.study/gopool"
 	httpserver "my.study/http"
 	"my.study/io"
 	kafka1 "my.study/kafka"
@@ -162,6 +163,10 @@ func main() {
 		break
 	case "kafkac":
 		kafka1.KafkaClient()
+		break
+
+	case "gopool":
+		gopoll.GopollMain()
 		break
 	default:
 		fmt.Println("cmd err,exit")
