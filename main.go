@@ -17,6 +17,7 @@ import (
 	gopoll "my.study/gopool"
 	httpserver "my.study/http"
 	"my.study/io"
+	iris1 "my.study/iris"
 	kafka1 "my.study/kafka"
 	locale1 "my.study/locale"
 	"my.study/net/client"
@@ -168,6 +169,9 @@ func main() {
 	case "gopool":
 		gopoll.GopollMain()
 		break
+	case "iris":
+		iris1.IrisMain()
+		break
 	default:
 		fmt.Println("cmd err,exit")
 		break
@@ -201,4 +205,5 @@ func base() {
 	basic.BitOperation()
 	basic.VarConst()
 	basic.Closer1()
+	basic.StubMain()
 }
