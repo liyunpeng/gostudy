@@ -101,6 +101,24 @@ func TestMultiPara(i int, m ...int) {
 	}
 }
 
+/*
+func main() {
+	var i float64 = 3.13
+	var j int64 = 5
+	p := &i
+	p = (*float64)(&j)
+	fmt.Println(p)
+
+	编译结果：
+	.\main.go:11:16: cannot convert &j (type *int64) to type *float64
+	错误: 进程退出代码 2.
+	指针类型和uintptr的值。
+	注意：指针之间不能直接转换，但是数值之间可以
+
+}
+*/
+
+
 func VarConst()  {
 	add(3, 5)
 

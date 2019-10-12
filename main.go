@@ -175,6 +175,10 @@ func main() {
 	case "iris1":
 		iris1.Irismain1()
 		break
+
+	case "template1":
+		template1.MainSever()
+		break
 	default:
 		fmt.Println("cmd err,exit")
 		break
