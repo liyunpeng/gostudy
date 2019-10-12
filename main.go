@@ -172,6 +172,9 @@ func main() {
 	case "iris":
 		iris1.IrisMain()
 		break
+	case "iris1":
+		iris1.Irismain1()
+		break
 	default:
 		fmt.Println("cmd err,exit")
 		break
@@ -206,4 +209,6 @@ func base() {
 	basic.VarConst()
 	basic.Closer1()
 	basic.StubMain()
+
+	basic.SyncPool()
 }

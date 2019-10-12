@@ -21,6 +21,8 @@ func (this *dataStruct) pmethod() {
 	this.num = 7
 }
 
+
+
 func (this dataStruct) vmethod() {
 	this.num = 8
 	/*
@@ -89,6 +91,21 @@ func compare3() {
 
 	fmt.Println("bytes.Equal(b1, b2) b1 == b2:", bytes.Equal(b1, b2)) //prints: b1 == b2: true
 }
+
+type S struct {
+	m string
+}
+
+func f123() *S {
+	return &S{"foo"}  //A
+}
+
+func main() {
+	p := *(f123()) //B
+	fmt.Println(p.m) //print "foo"
+}
+
+
 func Struct() {
 	fmt.Println("<------------------ Struct begin ------------------> ")
 	struct1()

@@ -9,7 +9,7 @@ import (
 )
 
 
-func newApp() *iris.Application {
+func newApp1() *iris.Application {
 	app := iris.New()
 	app.Use(recover.New())
 	app.Use(logger.New())
@@ -19,7 +19,7 @@ func newApp() *iris.Application {
 }
 
 func IrisMain() {
-	app := newApp()
+	app := newApp1()
 
 	app.Run(iris.Addr(":8080"))
 }
