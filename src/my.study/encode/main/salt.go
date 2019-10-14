@@ -1,4 +1,4 @@
-package encode1
+package encodemain
 
 import (
 	"crypto/md5"

@@ -118,6 +118,40 @@ func main() {
 }
 */
 
+var block = "package"
+func sameVar() {
+	/*
+		函数里面可重复定义
+	 */
+	block := "function"
+	{
+		/*
+			代码块里面可重复定义
+		 */
+		block := 1
+		fmt.Printf("The block is %d.\n", block)
+	}
+	fmt.Printf("The block is %s.\n", block)
+
+	var a interface{}
+	a = 1
+	if a != nil {
+		/*
+			代码快里面胡可以遮挡外面胡同名变量
+		 */
+		a := "2"
+		fmt.Println(a)
+	}
+	fmt.Println(a)
+
+	/*
+	运行结果:
+	The block is 1.
+	The block is function.
+	2
+	1
+	 */
+}
 
 func VarConst()  {
 	add(3, 5)
@@ -134,4 +168,6 @@ func VarConst()  {
 	 */
 	i := 65
 	fmt.Println(string(i))
+
+	sameVar()
 }

@@ -28,12 +28,16 @@ func Testfile(){
 func writestring()  {
 	h := md5.New()
 	io.WriteString(h, "1234567890123456")
-	fmt.Println("h.size=", h.Size())
-	io.WriteString(h, "12345678901234561234567890123456")
-	fmt.Println("h.size=", h.Size())
+	fmt.Println("h=", h, "h.size=", h.Size())
 
-	io.WriteString(os.Stdout, "1234567890123456")
-	io.WriteString(os.Stdout, "12345678901234561234567890123456")
+	io.WriteString(h, "this is another writestirng")
+	fmt.Println("h=", h, "h.size=", h.Size())
+
+	io.WriteString(os.Stdout, "111111111111")
+	io.WriteString(os.Stdout, "222222222222222222222")
+	/*
+
+	 */
 }
 
 func Io(){

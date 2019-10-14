@@ -12,7 +12,7 @@ import (
 	context1 "my.study/context"
 	"my.study/distribute"
 	elasticesearch1 "my.study/elasticesearch"
-	"my.study/encode"
+	main2 "my.study/encode/main"
 	gin1 "my.study/gin"
 	gopoll "my.study/gopool"
 	httpserver "my.study/http"
@@ -133,7 +133,7 @@ func main() {
 		context1.Context()
 		break
 	case "encode":
-		encode1.Encode()
+		main2.Encode()
 		break
 	case "locale":
 		locale1.Locale()
@@ -154,7 +154,7 @@ func main() {
 		elasticesearch1.Es2()
 		break
 	case "proto":
-		encode1.Protobuf()
+		main2.Protobuf()
 		break
 	case "xorm":
 		xorm1.Xorm1()
@@ -188,7 +188,7 @@ func main() {
 func base() {
 	basic.BitOperation()
 	basic.Chan()
-	encode1.Encode()
+	main2.Encode()
 	basic.Go()
 	basic.Interface()
 	io.Io()
@@ -215,4 +215,7 @@ func base() {
 	basic.StubMain()
 
 	basic.SyncPool()
+
+	basic.Receiver()
+
 }

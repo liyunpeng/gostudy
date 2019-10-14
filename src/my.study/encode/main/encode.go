@@ -1,4 +1,4 @@
-package encode1
+package encodemain
 
 import (
 	"fmt"
@@ -16,6 +16,8 @@ func Encode() {
 	HashEncode()
 
 	JsonEncode()
+
+	JsonEasyEncode()
 
 	fmt.Println("<---------------------- Encode end ---------------------->")
 }
