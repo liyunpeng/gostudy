@@ -175,6 +175,16 @@ func main() {
 	case "iris1":
 		iris1.Irismain1()
 		break
+	case "irisc":
+		iris1.CacheClient()
+		break
+	case "irisa":
+		iris1.Authmain()
+		break
+
+	case "iriss":
+		iris1.CacheServer()
+		break
 
 	case "template1":
 		template1.MainSever()
