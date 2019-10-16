@@ -3,6 +3,7 @@ package iris1
 import (
 	"fmt"
 	"github.com/kataras/iris/httptest"
+	"my.study/iris/cookie"
 	"testing"
 )
 
@@ -31,7 +32,7 @@ func TestResponseWriterQuicktemplate(t *testing.T) {
 	expectedIndexRawBody := fmt.Sprintf(baseRawBody, "Index Page", "This is our index page's body.")
 	name := "yourname"
 	expectedHelloRawBody := fmt.Sprintf(baseRawBody, "Hello World!", "Hello <b>"+name+"!</b>")
-	app := newApp()
+	app := cookie.newApp()
 	e := httptest.New(t, app)
 	e.GET("/").Expect().Status(httptest.StatusOK).Body().Equal(expectedIndexRawBody)
 	e.GET("/" + name).Expect().Status(httptest.StatusOK).Body().Equal(expectedHelloRawBody)

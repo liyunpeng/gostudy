@@ -18,6 +18,7 @@ import (
 	httpserver "my.study/http"
 	"my.study/io"
 	iris1 "my.study/iris"
+	iriscookie "my.study/iris/cookie"
 	kafka1 "my.study/kafka"
 	locale1 "my.study/locale"
 	"my.study/net/client"
@@ -185,10 +186,17 @@ func main() {
 	case "iriss":
 		iris1.CacheServer()
 		break
-
+	case "iriscon":
+		iris1.Configmain()
+		break
 	case "template1":
 		template1.MainSever()
 		break
+	case "iriscookie":
+		iriscookie.Cookiemain1()
+		break
+
+
 	default:
 		fmt.Println("cmd err,exit")
 		break
