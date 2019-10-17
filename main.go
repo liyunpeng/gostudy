@@ -18,6 +18,7 @@ import (
 	httpserver "my.study/http"
 	"my.study/io"
 	iris1 "my.study/iris"
+	"my.study/iris/casbin1"
 	iriscookie "my.study/iris/cookie"
 	kafka1 "my.study/kafka"
 	locale1 "my.study/locale"
@@ -40,7 +41,7 @@ var help = func() {
 一个包可以出线多个 init() 函数,一个源文件也可以包含多个 init() 函数；
 init() 函数在代码中不能被显示调用、不能被引用（赋值给函数变量），否则出现编译错误;
 一个包被引用多次，如 A import B,C import B,A import C，B 被引用多次，但 B 包只会初始化一次；
- */
+*/
 func init() {
 	log.SetFlags(log.Ldate | log.Ltime | log.LstdFlags)
 }
@@ -49,7 +50,7 @@ func main() {
 	logger, err := seelog.LoggerFromConfigAsFile("seelog.xml")
 	/*
 		决定了所有seelog 在main结束时输出，控制台的随州输出seelog
-	 */
+	*/
 	defer seelog.Flush()
 	if err != nil {
 		seelog.Critical("err parsing config log file", err)
@@ -195,8 +196,18 @@ func main() {
 	case "iriscookie":
 		iriscookie.Cookiemain1()
 		break
-
-
+	case "iriscookieen":
+		iriscookie.CookieEncryptmain()
+		break
+	case "casbin":
+		casbin1.Casbinmain()
+		break
+	case "aws":
+		iris1.Awsmain()
+		break
+	case "xors":
+		iris1.Xors()
+		break
 	default:
 		fmt.Println("cmd err,exit")
 		break
