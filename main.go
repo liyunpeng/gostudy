@@ -246,5 +246,6 @@ func base() {
 	basic.SyncPool()
 
 	basic.Receiver()
-
+	basic.Err()
+	basic.Nil1()
 }

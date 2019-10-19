@@ -1,6 +1,13 @@
 package basic
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
+
+type interface2 interface {
+	call1()
+}
 
 type interface1 interface {
 	call()
@@ -129,5 +136,9 @@ func Interface() {
 	assert1()
 
 	nil2()
+
+	var a interface2
+	fmt.Println("interface2 type=", reflect.TypeOf(a))
+	fmt.Println("interface2 value=", reflect.ValueOf(a))
 	fmt.Println("<--------------------------- Interface end ------------------->")
 }
