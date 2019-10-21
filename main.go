@@ -126,7 +126,7 @@ func main() {
 		rpc1.Rpcclient()
 		break
 	case "regexp":
-		regexp1.Exp1()
+		regexp1.RegexpMain()
 		break
 	case "gin":
 		gin1.Gin1()
