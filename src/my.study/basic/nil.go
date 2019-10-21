@@ -134,7 +134,6 @@ func interfaceTwoMember() {
 			该变量指针只是声明，但并没有指向任何地址，所以 a == nil
 		*/
 		fmt.Println("a == nil") //  a == nil
-
 	} else {
 		fmt.Println("a != nil")
 	}
@@ -166,6 +165,68 @@ func interfaceTwoMember() {
 	fmt.Println("b Error():", b.Error()) // a
 }
 
+//////////////////////////////////////////////////////////////////
+type interface2 interface {
+	call1()
+}
+
+type interface2S struct {
+}
+
+func (*interface2S) call1() {
+	fmt.Println("interface2S call1 called")
+}
+
+func interfaceTypeValue(){
+	var a interface2
+	var s *interface2S
+
+	if s == nil {
+		fmt.Println(" s is nil")
+	}else{
+		fmt.Println(" s is no nil")
+	}
+	fmt.Printf("*interface2S type=%+v\n", reflect.TypeOf(s))
+	fmt.Printf("*interface2S value=%+v\n", reflect.ValueOf(s))
+	/*
+	 s is nil
+	*interface2S type=*basic.interface2S
+	*interface2S value=<nil>
+	 */
+
+	s.call1()
+	/*
+	   interface2S call1 called
+	*/
+
+	if a == nil {
+		fmt.Println(" a is nil")
+	}else{
+		fmt.Println(" a is no nil")
+	}
+	fmt.Printf("interface2 type=%+v\n", reflect.TypeOf(a))
+	fmt.Printf("interface2 value=%+v\n", reflect.ValueOf(a))
+/*
+    a is nil
+   interface2 type=<nil>
+   interface2 value=<invalid reflect.Value>
+ */
+
+	a = s
+	if a == nil {
+		fmt.Println(" a is nil")
+	}else{
+		fmt.Println(" a is no nil")
+	}
+	fmt.Printf("interface2 type=%+v\n", reflect.TypeOf(a))
+	fmt.Printf("interface2 value=%+v\n", reflect.ValueOf(a))
+	/*
+	 a is no nil
+	interface2 type=*basic.interface2S
+	interface2 value=<nil>
+	 */
+}
+
 func Nil1() {
 	fmt.Println("<------------------------ Nil1 begin ----------------------------->")
 	niladdress()
@@ -174,5 +235,6 @@ func Nil1() {
 	typeCompare()
 	interfaceComparefalse()
 	interfaceTwoMember()
+	interfaceTypeValue()
 	fmt.Println("<------------------------ Nil1 end ----------------------------->")
 }
