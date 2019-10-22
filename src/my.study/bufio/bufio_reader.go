@@ -35,115 +35,139 @@ func bufioReaderSize() {
 		这里写0，实际就是16个字节的缓冲区
 	*/
 	buf := bufio.NewReaderSize(sr, 0)
+	/*
+		buf.Buffered() 为缓冲区存放的字节个数
+	 */
 	fmt.Printf("buf.Size()=%d buf.Buffered()=%d \n", buf.Size(), buf.Buffered())
+	/*
+		运行结果:
+		buf.Size()=16 buf.Buffered()=0
+	 */
 
 	/*
 		从当前缓冲区取出2个字节, 但并不是读取， 读取的指针没有变化，
 		因为peek操作的原因， 会引发一次IO, 所以缓冲区被填满， 所以buffer()返回16
-	buf.Buffered() 表示 可以从当前缓冲区读出来的字节数
 	*/
 	s, _ := buf.Peek(3)
-	fmt.Printf("buf.Peek(3), buf.Buffered()=%d  %q\n", buf.Buffered(), s) // 16   "abcDE"
+	fmt.Printf("buf.Peek(3), buf.Buffered()=%d  %q\n", buf.Buffered(), s)
+	/*
+	运行结果:
+	buf.Peek(3), buf.Buffered()=16  "123"
+	 */
 
+	/*
+		要读取的个数小于缓冲里的个数, 就直接从缓冲里读
+	 */
 	b := make([]byte, 5)
 	buf.Read(b)
 	fmt.Printf("buf.Read(5), buf.Buffered()=%d  buf.Read()=%q\n", buf.Buffered(), b)
+	/*
+	运行结果:
+	buf.Read(5), buf.Buffered()=11  buf.Read()="12345"
+	 */
 
 	b = make([]byte, 3)
 	buf.Read(b)
-	fmt.Printf("buf.Read(3), buf.Buffered()=%d  buf.Read()=%q\n", buf.Buffered(), b)
+	fmt.Printf("buf.Read(3), buf.Buffered()=%d  buf.Read()=%q \n", buf.Buffered(), b)
+	/*
+	运行结果:
+	buf.Read(3), buf.Buffered()=8  buf.Read()="678"
+	*/
 
 	b = make([]byte, 2)
 	buf.Read(b)
 	fmt.Printf("buf.Read(2), buf.Buffered()=%d  buf.Read()=%q\n", buf.Buffered(), b)
-
+	/*
+	运行结果:
+	buf.Read(2), buf.Buffered()=6  buf.Read()="90"
+	 */
 
 	buf.Discard(1)
-	fmt.Printf("buf.Read(1), buf.Buffered()=%d  %q\n", buf.Buffered(), s)
+	fmt.Printf("buf.Discard(1), buf.Buffered()=%d \n", buf.Buffered())
+	/*
+	运行结果:
+	buf.Discard(1), buf.Buffered()=5
+	*/
 
 	/*
-	buf.Size()=16 buf.Buffered()=0
-	buf.Peek(3), buf.Buffered()=16  "123"
-	buf.Read(5), buf.Buffered()=11  buf.Read()="12345"
-	buf.Read(3), buf.Buffered()=8  buf.Read()="678"
-	buf.Read(2), buf.Buffered()=6  buf.Read()="90"
-	buf.Read(1), buf.Buffered()=5  "123"
+		TODO
+		理解\x00\x00
 	 */
-	//for n, err := 0, error(nil); err == nil; {
-	//	n, err = buf.Read(b)
-	//	fmt.Printf("%d   %q   %v\n", buf.Buffered(), b[:n], err)
-	//}
-	// 5   "bcDEFGHIJK"   <nil>
-	// 0   "LMNOP"   <nil>
-	// 6   "QRSTUVWXYZ"   <nil>
-	// 0   "123456"   <nil>
-	// 0   "7890"   <nil>
-	// 0   ""   EOF
+	b = make([]byte, 7)
+	buf.Read(b)
+	fmt.Printf("buf.Read(7), buf.Buffered()=%d  buf.Read()=%q \n", buf.Buffered(), b)
+	/*
+	运行结果:
+	buf.Read(6), buf.Buffered()=0  buf.Read()="BCDEF\x00\x00"
+	*/
 }
 
-// 示例：ReadLine
-func reader3() {
+func bufReadline() {
 	sr := strings.NewReader("ABCDEFGHIJKLMNOPQRSTUVWXYZ\n1234567890")
-	buf := bufio.NewReaderSize(sr, 0)
+
+	/*
+		buffer size小于16, 按16计算, 决定了readline的最大长度
+		这里buffer size设置为20 则一次readline读入20个字节
+	 */
+	buf := bufio.NewReaderSize(sr, 20)
+	for line, isPrefix, err := []byte{0}, false, error(nil); len(line) > 0 && err == nil; {
+		line, isPrefix, err = buf.ReadLine()
+		fmt.Printf("%q   %t   %v\n", line, isPrefix, err)
+	}
+	/*
+	运行结果:
+	"ABCDEFGHIJKLMNOPQRST"   true   <nil>
+	"UVWXYZ"   false   <nil>
+	"1234567890"   false   <nil>
+	""   false   EOF
+	 */
+
+	/*
+		readline会自动处理尾部的\n,
+	 */
+	buf = bufio.NewReaderSize(strings.NewReader("readline end with mark\n"), 0)
 
 	for line, isPrefix, err := []byte{0}, false, error(nil); len(line) > 0 && err == nil; {
 		line, isPrefix, err = buf.ReadLine()
 		fmt.Printf("%q   %t   %v\n", line, isPrefix, err)
 	}
-	// "ABCDEFGHIJKLMNOP"   true   <nil>
-	// "QRSTUVWXYZ"   false   <nil>
-	// "1234567890"   false   <nil>
-	// ""   false   EOF
+	/*
+		运行结果:
+	   "ABCDEFG line end"   true   <nil>
+	   " with mark"   false   <nil>
+	   ""   false   EOF
+	 */
 
-
-	// 尾部有一个换行标记
-	buf = bufio.NewReaderSize(strings.NewReader("ABCDEFG\n"), 0)
-
+	buf = bufio.NewReaderSize(strings.NewReader("readline end without mark"), 0)
 	for line, isPrefix, err := []byte{0}, false, error(nil); len(line) > 0 && err == nil; {
 		line, isPrefix, err = buf.ReadLine()
 		fmt.Printf("%q   %t   %v\n", line, isPrefix, err)
 	}
-	// "ABCDEFG"   false   <nil>
-	// ""   false   EOF
-
-	fmt.Println("----------")
-
-	// 尾部没有换行标记
-	buf = bufio.NewReaderSize(strings.NewReader("ABCDEFG"), 0)
-
-	for line, isPrefix, err := []byte{0}, false, error(nil); len(line) > 0 && err == nil; {
-		line, isPrefix, err = buf.ReadLine()
-		fmt.Printf("%q   %t   %v\n", line, isPrefix, err)
-	}
-	// "ABCDEFG"   false   <nil>
-	// ""   false   EOF
+	/*
+	   运行结果:
+	   "ABCDEFG line end"   true   <nil>
+	   " without mark"   false   <nil>
+	   ""   false   EOF
+	 */
 }
 
-// 示例：ReadSlice
-func reader4() {
-	// 尾部有换行标记
-	buf := bufio.NewReaderSize(strings.NewReader("ABCDEFG\n"), 0)
+func bufReadSlice() {
+	buf := bufio.NewReaderSize(strings.NewReader("readslice test string over 16 words"), 0)
 
 	for line, err := []byte{0}, error(nil); len(line) > 0 && err == nil; {
 		line, err = buf.ReadSlice('\n')
 		fmt.Printf("%q   %v\n", line, err)
 	}
-	// "ABCDEFG\n"   <nil>
-	// ""   EOF
+	/*
+	运行结果:
+	"readslice test s"   bufio: buffer full
+	 */
 
-	fmt.Println("----------")
-
-	// 尾部没有换行标记
-	buf = bufio.NewReaderSize(strings.NewReader("ABCDEFG"), 0)
-
-	for line, err := []byte{0}, error(nil); len(line) > 0 && err == nil; {
-		line, err = buf.ReadSlice('\n')
-		fmt.Printf("%q   %v\n", line, err)
-	}
-	// "ABCDEFG"   EOF
 }
 
 func BufioReader()  {
 	bufioReadline()
 	bufioReaderSize()
+	bufReadline()
+	bufReadSlice()
 }

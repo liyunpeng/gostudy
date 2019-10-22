@@ -1,6 +1,6 @@
 package bufio1
 
 func BufioMain() {
-	ReaderMain()
+	StringReader()
 	BufioReader()
 }

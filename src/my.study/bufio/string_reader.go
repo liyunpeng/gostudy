@@ -5,21 +5,42 @@ import (
 	"strings"
 )
 
-func reader1() {
-	r := strings.NewReader("abcdefghijklmn")
-	fmt.Println(r.Len()) // 输出14  初始时，未读长度等于字符串长度
+func readerLenSize() {
+	r := strings.NewReader("1234567890")
+	fmt.Println(r.Len(), r.Size())
+	/*
+	运行结果:
+	10 10
+	 */
+
 	var buf []byte
 	buf = make([]byte, 5)
-	readLen, err := r.Read(buf)
-	fmt.Println("读取到的长度:", readLen) //读取到的长度5
-	if err != nil {
-		fmt.Println("错误:", err)
-	}
-	fmt.Println(buf)      //adcde
-	fmt.Println(r.Len())  //9   读取到了5个 剩余未读是14-5
-	fmt.Println(r.Size()) //14   字符串的长度
+	readLen, _ := r.Read(buf)
+	fmt.Println("读取到的长度:", readLen)
+	/*
+		运行结果:
+		读取到的长度: 5
+	 */
+
+	fmt.Println(buf)
+	/*
+	运行结果:
+		[49 50 51 52 53]
+	 */
+
+	fmt.Println(string(buf))
+	/*
+	运行结果:
+	12345
+	 */
+
+	fmt.Println(r.Len(), r.Size())
+	/*
+	运行结果:
+	5 10
+	 */
 }
 
-func ReaderMain(){
-	reader1()
+func StringReader(){
+	readerLenSize()
 }
