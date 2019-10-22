@@ -61,6 +61,14 @@ func bufioReaderSize() {
 	buf.Discard(1)
 	fmt.Printf("buf.Read(1), buf.Buffered()=%d  %q\n", buf.Buffered(), s)
 
+	/*
+	buf.Size()=16 buf.Buffered()=0
+	buf.Peek(3), buf.Buffered()=16  "123"
+	buf.Read(5), buf.Buffered()=11  buf.Read()="12345"
+	buf.Read(3), buf.Buffered()=8  buf.Read()="678"
+	buf.Read(2), buf.Buffered()=6  buf.Read()="90"
+	buf.Read(1), buf.Buffered()=5  "123"
+	 */
 	//for n, err := 0, error(nil); err == nil; {
 	//	n, err = buf.Read(b)
 	//	fmt.Printf("%d   %q   %v\n", buf.Buffered(), b[:n], err)
