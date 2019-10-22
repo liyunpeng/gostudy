@@ -147,7 +147,7 @@ func main() {
 		distribute.Distribute()
 		break
 	case "bufio":
-		bufio1.Reader()
+		bufio1.BufioMain()
 		break
 	case "es":
 		elasticesearch1.Es()

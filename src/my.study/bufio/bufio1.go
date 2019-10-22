@@ -40,7 +40,7 @@ func ReadFile(filePath string, handle func(string)) error {
 
 func NewReaderSizeLear() {
 	// 用 strings.Reader 模拟一个文件IO对象
-	strReader := strings.NewReader("12345678901234567890123456789012345678901234567890")
+	strReader := strings.NewReader("1234567890abcdefghiklmnopqrstuvwxyz")
 
 	// go 的缓冲区最小为 16 byte，我们用最小值比较容易演示
 	bufReader := bufio.NewReaderSize(strReader, 16)
@@ -92,136 +92,11 @@ func NewReaderSizeLear() {
 	fmt.Printf("bufReader buffered: %d, content: %s\n", bufReader.Buffered(), tmpStr[:n])
 }
 
-func reader1() {
-	/*
-		strings.NewReader 返回一个os.reader对象
-	*/
-	sr := strings.NewReader("123\n456")
-	/*
-		bufio.Reader不能直接使用，需要绑定到某个io.Reader上
-	*/
-	reader := bufio.NewReader(sr)
-
-	line, _, err := reader.ReadLine()
-	if err != nil {
-		panic(err)
-	}
-
-	/*
-		ReadLine读取的结束标志是\n, 所以只输出123
-	*/
-	fmt.Println(string(line))
-}
-
-func reader2() {
-	fmt.Println("<----------------------- reader2 begin ------------------->")
-	sr := strings.NewReader("ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
-	/*
-		将 io.Reader对象 封装成一个带缓存的 bufio.Reader 对象，
-		缓存大小由 size 指定（如果小于 16 则会被设置为 16）。
-		这里写0， 实际就是16个字节的缓冲区
-	*/
-	buf := bufio.NewReaderSize(sr, 0)
-
-	b := make([]byte, 10)
-
-	/*
-		buf.Buffered() 表示 可以从当前缓冲区读出来的字节数
-	*/
-	fmt.Println(buf.Buffered()) // 输出0
-
-	/*
-		从当前缓冲区取出2个字节, 但并不是读取， 读取的指针没有变化，
-		因为peek操作的原因， 会引发一次IO, 所以缓冲区被填满， 所以buffer()返回16
-	*/
-	s, _ := buf.Peek(2)
-	fmt.Printf("%d   %q\n", buf.Buffered(), s) // 16   "abcDE"
-
-	buf.Discard(1)
-
-	for n, err := 0, error(nil); err == nil; {
-		n, err = buf.Read(b)
-		fmt.Printf("%d   %q   %v\n", buf.Buffered(), b[:n], err)
-	}
-	// 5   "bcDEFGHIJK"   <nil>
-	// 0   "LMNOP"   <nil>
-	// 6   "QRSTUVWXYZ"   <nil>
-	// 0   "123456"   <nil>
-	// 0   "7890"   <nil>
-	// 0   ""   EOF
-	fmt.Println("<----------------------- reader2 end ------------------->")
-}
-
-// 示例：ReadLine
-func reader3() {
-	sr := strings.NewReader("ABCDEFGHIJKLMNOPQRSTUVWXYZ\n1234567890")
-	buf := bufio.NewReaderSize(sr, 0)
-
-	for line, isPrefix, err := []byte{0}, false, error(nil); len(line) > 0 && err == nil; {
-		line, isPrefix, err = buf.ReadLine()
-		fmt.Printf("%q   %t   %v\n", line, isPrefix, err)
-	}
-	// "ABCDEFGHIJKLMNOP"   true   <nil>
-	// "QRSTUVWXYZ"   false   <nil>
-	// "1234567890"   false   <nil>
-	// ""   false   EOF
-
-	fmt.Println("----------")
-
-	// 尾部有一个换行标记
-	buf = bufio.NewReaderSize(strings.NewReader("ABCDEFG\n"), 0)
-
-	for line, isPrefix, err := []byte{0}, false, error(nil); len(line) > 0 && err == nil; {
-		line, isPrefix, err = buf.ReadLine()
-		fmt.Printf("%q   %t   %v\n", line, isPrefix, err)
-	}
-	// "ABCDEFG"   false   <nil>
-	// ""   false   EOF
-
-	fmt.Println("----------")
-
-	// 尾部没有换行标记
-	buf = bufio.NewReaderSize(strings.NewReader("ABCDEFG"), 0)
-
-	for line, isPrefix, err := []byte{0}, false, error(nil); len(line) > 0 && err == nil; {
-		line, isPrefix, err = buf.ReadLine()
-		fmt.Printf("%q   %t   %v\n", line, isPrefix, err)
-	}
-	// "ABCDEFG"   false   <nil>
-	// ""   false   EOF
-}
-
-// 示例：ReadSlice
-func reader4() {
-	// 尾部有换行标记
-	buf := bufio.NewReaderSize(strings.NewReader("ABCDEFG\n"), 0)
-
-	for line, err := []byte{0}, error(nil); len(line) > 0 && err == nil; {
-		line, err = buf.ReadSlice('\n')
-		fmt.Printf("%q   %v\n", line, err)
-	}
-	// "ABCDEFG\n"   <nil>
-	// ""   EOF
-
-	fmt.Println("----------")
-
-	// 尾部没有换行标记
-	buf = bufio.NewReaderSize(strings.NewReader("ABCDEFG"), 0)
-
-	for line, err := []byte{0}, error(nil); len(line) > 0 && err == nil; {
-		line, err = buf.ReadSlice('\n')
-		fmt.Printf("%q   %v\n", line, err)
-	}
-	// "ABCDEFG"   EOF
-}
 
 func Reader() {
 	fmt.Println("<---------------------------- bufio 1  begin ----------------------->")
 	NewReaderSizeLear()
-	reader1()
-	reader2()
-	reader3()
-	reader4()
+
 
 	handle1 := func(s string) {
 		fmt.Println(s)
