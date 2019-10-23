@@ -185,7 +185,6 @@ func interfaceTypeValue(){
 		类型变量只定义，没有定义， 也可以调用这个类型变量里的方法
 		类型变量的值是nil, 那他就是nil,
 		接口的变量只有值和类型都是nil, 才是nil
-		
 	 */
 	if s == nil {
 		fmt.Println(" s is nil")
@@ -242,5 +241,6 @@ func Nil1() {
 	interfaceComparefalse()
 	interfaceTwoMember()
 	interfaceTypeValue()
+	interfaceNil()
 	fmt.Println("<------------------------ Nil1 end ----------------------------->")
 }
