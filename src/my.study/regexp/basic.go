@@ -63,6 +63,7 @@ func mustCompileFindAllString() {
 	exp1 := regexp.MustCompile(`\d+\.\d+`)
 	result1 := exp1.FindAllString(context1, -1)
 	fmt.Printf("\\d+\\.\\d+ FindAllString=%v\n", result1)
+
 	/*
 		运行结果:
 		\d+\.\d+ FindAllString=[3.14 1.0 6.66]

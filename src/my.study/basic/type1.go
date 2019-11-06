@@ -87,6 +87,36 @@ func zhengfu() {
 	fmt.Printf("%+d %+d", i, j)
 }
 
+func typeConvert(){
+	a := 5.0
+	b := int(a)
+	/*
+		b := a.(int)
+		这样写a.(int)， 是非法的， a 只有是指针的时候才可以这样写
+	*/
+
+	fmt.Println(b)
+
+	var a1 interface{}
+
+	a1 = 1
+	c := a1.(int)
+	/*
+		接口不能用如下方式类型转换， 语法错误
+		c := int(a1)
+	*/
+	fmt.Println(c)
+
+	/*
+		对接口做类型转换时， 如果类型不是当初对接口变量赋值的类型， 运行时会有panic错误：
+		d := a1.(string) 运行时， 报如下panic：
+		panic : interface conversion: interface {} is int, not string
+		goroutine 16 [running]:
+	*/
+	d := a1.(int)
+
+	fmt.Println(d)
+}
 
 func Type1() {
 	fmt.Println("<----------------------------- Type begin ---------------------------->")
@@ -94,5 +124,6 @@ func Type1() {
 	type2()
 	zhengfu()
 	type3()
+	typeConvert()
 	fmt.Println("<----------------------------- Type end ---------------------------->")
 }
