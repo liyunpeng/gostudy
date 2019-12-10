@@ -7,19 +7,19 @@ import (
 	"my.study/auto"
 	"my.study/basic"
 	beego1 "my.study/beego"
-	"my.study/btcoin"
+	//"my.study/btcoin"
 	bufio1 "my.study/bufio"
 	context1 "my.study/context"
 	"my.study/distribute"
-	elasticesearch1 "my.study/elasticesearch"
+	//elasticesearch1 "my.study/elasticesearch"
 	main2 "my.study/encode/main"
 	gin1 "my.study/gin"
 	gopoll "my.study/gopool"
 	httpserver "my.study/http"
 	"my.study/io"
-	iris1 "my.study/iris"
-	"my.study/iris/casbin1"
-	iriscookie "my.study/iris/cookie"
+	//iris1 "my.study/iris"
+	//"my.study/iris/casbin1"
+	//iriscookie "my.study/iris/cookie"
 	kafka1 "my.study/kafka"
 	locale1 "my.study/locale"
 	"my.study/net/client"
@@ -29,7 +29,7 @@ import (
 	rpc1 "my.study/rpc"
 	"my.study/sql"
 	template1 "my.study/template"
-	xorm1 "my.study/xorm"
+	//xorm1 "my.study/xorm"
 	"os"
 )
 
@@ -86,11 +86,11 @@ func main() {
 	case "net4":
 		client.Net4()
 		break
-	case "bit":
-		btcoin.Transaction()
-	case "sha256":
-		btcoin.TestSha256()
-		break
+	//case "bit":
+	//	btcoin.Transaction()
+	//case "sha256":
+	//	btcoin.TestSha256()
+	//	break
 	case "clientTcp":
 		client.ClientOnlySendReceiveTCPConn()
 		break
@@ -149,18 +149,18 @@ func main() {
 	case "bufio":
 		bufio1.BufioMain()
 		break
-	case "es":
-		elasticesearch1.Es()
-		break
-	case "es2":
-		elasticesearch1.Es2()
-		break
+	//case "es":
+	//	elasticesearch1.Es()
+	//	break
+	//case "es2":
+	//	elasticesearch1.Es2()
+	//	break
 	case "proto":
 		main2.Protobuf()
 		break
-	case "xorm":
-		xorm1.Xorm1()
-		break
+	//case "xorm":
+	//	xorm1.Xorm1()
+	//	break
 	case "kafkas":
 		kafka1.Kafkaserver()
 		break
@@ -171,43 +171,43 @@ func main() {
 	case "gopool":
 		gopoll.GopollMain()
 		break
-	case "iris":
-		iris1.IrisMain()
-		break
-	case "iris1":
-		iris1.Irismain1()
-		break
-	case "irisc":
-		iris1.CacheClient()
-		break
-	case "irisa":
-		iris1.Authmain()
-		break
-
-	case "iriss":
-		iris1.CacheServer()
-		break
-	case "iriscon":
-		iris1.Configmain()
-		break
-	case "template1":
-		template1.MainSever()
-		break
-	case "iriscookie":
-		iriscookie.Cookiemain1()
-		break
-	case "iriscookieen":
-		iriscookie.CookieEncryptmain()
-		break
-	case "casbin":
-		casbin1.Casbinmain()
-		break
-	case "aws":
-		iris1.Awsmain()
-		break
-	case "xors":
-		iris1.Xors()
-		break
+	//case "iris":
+	//	iris1.IrisMain()
+	//	break
+	//case "iris1":
+	//	iris1.Irismain1()
+	//	break
+	//case "irisc":
+	//	iris1.CacheClient()
+	//	break
+	//case "irisa":
+	//	iris1.Authmain()
+	//	break
+	//
+	//case "iriss":
+	//	iris1.CacheServer()
+	//	break
+	//case "iriscon":
+	//	iris1.Configmain()
+	//	break
+	//case "template1":
+	//	template1.MainSever()
+	//	break
+	//case "iriscookie":
+	//	iriscookie.Cookiemain1()
+	//	break
+	//case "iriscookieen":
+	//	iriscookie.CookieEncryptmain()
+	//	break
+	////case "casbin":
+	////	casbin1.Casbinmain()
+	////	break
+	//case "aws":
+	//	iris1.Awsmain()
+	//	break
+	//case "xors":
+	//	iris1.Xors()
+	//	break
 	default:
 		fmt.Println("cmd err,exit")
 		break

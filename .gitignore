@@ -8,3 +8,4 @@ src/gopkg.in
 *~
 src/moul.io/
 src/go.etcd.io
+vendor
