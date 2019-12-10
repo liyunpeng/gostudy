@@ -25,28 +25,49 @@ func nilNotKey() {
 }
 
 /*
-业务中一般将nil值表示为异常。
+一般将nil值表示为异常。
 nil值的大小始终与其类型与nil值相同的non-nil值大小相同。
 因此, 表示不同零值的nil标识符可能具有不同的大小。
 */
 func nilSize() {
+	var int1 int
+	fmt.Println("int变量长度=", unsafe.Sizeof(int1), "字节") // 8
+
+	var bool1 bool
+	fmt.Println("bool变量长度=", unsafe.Sizeof(bool1), "字节") // 8
+
+	var arrInt [1]int
+	fmt.Println("只有一个int的数组长度=", unsafe.Sizeof(arrInt), "字节") // 8
+
 	var p *struct{} = nil
-	fmt.Println(unsafe.Sizeof(p)) // 8
+	fmt.Println("指针长度=", unsafe.Sizeof(p), "字节") // 8
 
 	var s []int = nil
-	fmt.Println(unsafe.Sizeof(s)) // 24
+	fmt.Println("nil切片长度=", unsafe.Sizeof(s), "字节") // 8
 
 	var m map[int]bool = nil
-	fmt.Println(unsafe.Sizeof(m)) // 8
+	fmt.Println("nil map长度=", unsafe.Sizeof(m), "字节") // 8
 
 	var c chan string = nil
-	fmt.Println(unsafe.Sizeof(c)) // 8
+	fmt.Println("nil 通道长度=", unsafe.Sizeof(c), "字节") // 8
 
 	var f func() = nil
-	fmt.Println(unsafe.Sizeof(f)) // 8
+	fmt.Println("nil 函数变量长度=", unsafe.Sizeof(f), "字节") // 8
 
 	var i interface{} = nil
-	fmt.Println(unsafe.Sizeof(i)) // 16
+	fmt.Println("nil 接口长度=", unsafe.Sizeof(i), "字节") // 8
+	/*
+	运行结果：
+	int变量长度= 8 字节
+	bool变量长度= 1 字节
+	只有一个int的数组长度= 8 字节
+	指针长度= 8 字节
+	nil切片长度= 24 字节
+	nil map长度= 8 字节
+	nil 通道长度= 8 字节
+	nil 函数变量长度= 8 字节
+	nil 接口长度= 16 字节
+	 */
 }
 
 /*
