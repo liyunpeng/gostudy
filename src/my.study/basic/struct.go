@@ -10,52 +10,71 @@ import (
 type S struct {
 	m string
 }
-func (S) SVal(){}
-func (*S) SPtr(){}
 
-type Ta struct{
-	S
-}
-func (t Ta) TVal(){
-	fmt.Println("aaaaaaaaaaaaa ")
-}
-func (t *Ta) TPtr(){}
-
-func method1 (a interface{}){
-	t := reflect.TypeOf(a)
-
-	fmt.Println("t=", t, "t.nummethod=", t.NumMethod())
-
-	for i, n :=0,  t.NumMethod(); i< n; i++ {
-		m := t.Method(i)
-		fmt.Println("方法名=", m.Name, "方法类型=", m.Type)
-	}
-}
-
-func  test1()  {
-	var t Ta
-	t1 := reflect.TypeOf(t)
-	fmt.Println("t=", t1, " t.nummethod=", t1.NumMethod())
-
-	method1(t)
-
-	fmt.Println("---------------- method1 -------------------")
-	method1(&t)
-}
 /*
-	new一个结构体对象的标准写法
+	new一个类型对象的标准写法, 类型编写的标准写法， 在类型定义后面， 跟着就是一个New方法，
+	不要说结构体，要说类型，go里面struct代表的是类型
 */
 func NewS() *S {
 	return &S{"foo"}
 }
+func (S) SVal() {
+	fmt.Println("SVal call")
+}
+func (*S) SPtr() {
+	fmt.Println("SPtr call")
+}
+
+type Ta struct {
+	S
+}
+
+func (t Ta) TVal() {
+	fmt.Println("TVal call")
+}
+func (t *Ta) TPtr() {
+	fmt.Println("TPtr call ")
+}
+func (t *Ta) tPtr() {
+	fmt.Println("tPtr call ")
+}
+
+func printStructMethod(a interface{}) {
+	typeAll := reflect.TypeOf(a)
+
+	fmt.Println("类型=", typeAll, "方法个数=", typeAll.NumMethod())
+
+	for i, n := 0, typeAll.NumMethod(); i < n; i++ {
+		m := typeAll.Method(i)
+		fmt.Println("方法名=", m.Name, "方法类型=", m.Type)
+	}
+}
+
+func receiverMethodTest() {
+	// 这样的声明已经为类型分配了空间， 可不是Nil， 但是通道这样声明就是nil
+	var t Ta
+	t.m = "m string"
+	/*
+		自定义类型变量不能与nil比较，
+		if t == nil {
+			fmt.Println("只声明的变量，其值是nil")
+		}
+	*/
+	fmt.Println("对象t的方法集：")
+	printStructMethod(t)
+	fmt.Println("指针t的方法集：")
+	printStructMethod(&t)
+	t.TPtr()
+	t.tPtr()
+}
 
 type dataStruct struct {
-	S     // 声明一个匿名结构体， S是上面定义的类型
+	S // 声明一个匿名类型， S是上面定义的类型
 	num   int
 	key   *string
 	bool1 bool
 	items map[string]bool
-	in interface{}
+	in    interface{}
 }
 
 func (d *dataStruct) pointerMethod() {
@@ -89,25 +108,25 @@ func struct1() {
 	d1.pointerMethod1()
 	//d1.valueMethod1()
 	/*
-	导致：
-	panic: runtime error: invalid memory address or nil pointer dereference
-	[signal 0xc0000005 code=0x0 addr=0x0 pc=0x7298f0]
+		导致：
+		panic: runtime error: invalid memory address or nil pointer dereference
+		[signal 0xc0000005 code=0x0 addr=0x0 pc=0x7298f0]
 
-	goroutine 1 [running]:
-	my.study/basic.struct1()
-	        F:/GoWorkSpace/gostudy/src/my.study/basic/struct.go:90 +0x2b0
-	my.study/basic.Struct()
-	        F:/GoWorkSpace/gostudy/src/my.study/basic/struct.go:165 +0x8a
-	main.base()
-	        F:/GoWorkSpace/gostudy/main.go:231 +0x6d
-	main.main()
-	        F:/GoWorkSpace/gostudy/main.go:72 +0x30a
-	exit status 2
-	 */
+		goroutine 1 [running]:
+		my.study/basic.struct1()
+		        F:/GoWorkSpace/gostudy/src/my.study/basic/struct.go:90 +0x2b0
+		my.study/basic.Struct()
+		        F:/GoWorkSpace/gostudy/src/my.study/basic/struct.go:165 +0x8a
+		main.base()
+		        F:/GoWorkSpace/gostudy/main.go:231 +0x6d
+		main.main()
+		        F:/GoWorkSpace/gostudy/main.go:72 +0x30a
+		exit status 2
+	*/
 
 	key := "key.1"
 	/*
-		结构体初始化时， 要写上字段名, 下面是结构体对象初始化标准姿势
+		自定义类型变量初始化时， 要写上字段名, 下面是类型对象初始化标准姿势
 	*/
 	d := dataStruct{
 		num:   1,
@@ -177,7 +196,7 @@ func compare3() {
 
 func Struct() {
 	fmt.Println("<------------------ Struct begin ------------------> ")
-	test1()
+	receiverMethodTest()
 	struct1()
 	compare()
 	compare1()
@@ -187,12 +206,13 @@ func Struct() {
 	fmt.Println(p.m)
 	fmt.Println("<--------------------- Struct end ----------------- >")
 }
+
 /*
 运行结果：
 <------------------ Struct begin ------------------>
 t= basic.Ta t.nummethod= 0
 t= basic.Ta t.nummethod= 0
----------------- method1 -------------------
+---------------- printStructMethod -------------------
 t= *basic.Ta t.nummethod= 0
 d0 长度= 64 字节
 pointerMethod1
@@ -201,4 +221,4 @@ d1 长度= 64 字节
 pointerMethod1
 
 
- */
+*/
