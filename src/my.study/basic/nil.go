@@ -31,43 +31,53 @@ nil值的大小始终与其类型与nil值相同的non-nil值大小相同。
 */
 func nilSize() {
 	var int1 int
-	fmt.Println("int变量长度=", unsafe.Sizeof(int1), "字节") // 8
+	fmt.Println("int变量size=", unsafe.Sizeof(int1), "字节")
 
 	var bool1 bool
-	fmt.Println("bool变量长度=", unsafe.Sizeof(bool1), "字节") // 8
+	fmt.Println("bool变量size=", unsafe.Sizeof(bool1), "字节")
+
+	var byte1 [1]byte
+	fmt.Println("字节数组size=", unsafe.Sizeof(byte1), "字节")
+
+	var rune1 [1]rune
+	fmt.Println("rune数组size=", unsafe.Sizeof(rune1), "字节")
+
+	var byte5 [5]byte
+	fmt.Println("5个字节元素的数组size=", unsafe.Sizeof(byte5), "字节")
 
 	var arrInt [1]int
-	fmt.Println("只有一个int的数组长度=", unsafe.Sizeof(arrInt), "字节") // 8
+	fmt.Println("只有一个int的数组size=", unsafe.Sizeof(arrInt), "字节")
 
 	var p *struct{} = nil
-	fmt.Println("指针长度=", unsafe.Sizeof(p), "字节") // 8
+	fmt.Println("指针size=", unsafe.Sizeof(p), "字节")
 
 	var s []int = nil
-	fmt.Println("nil切片长度=", unsafe.Sizeof(s), "字节") // 8
+	fmt.Println("nil切片size=", unsafe.Sizeof(s), "字节")
 
 	var m map[int]bool = nil
-	fmt.Println("nil map长度=", unsafe.Sizeof(m), "字节") // 8
+	fmt.Println("nil mapsize=", unsafe.Sizeof(m), "字节")
 
 	var c chan string = nil
-	fmt.Println("nil 通道长度=", unsafe.Sizeof(c), "字节") // 8
+	fmt.Println("nil 通道size=", unsafe.Sizeof(c), "字节")
 
 	var f func() = nil
-	fmt.Println("nil 函数变量长度=", unsafe.Sizeof(f), "字节") // 8
+	fmt.Println("nil 函数变量size=", unsafe.Sizeof(f), "字节")
 
 	var i interface{} = nil
-	fmt.Println("nil 接口长度=", unsafe.Sizeof(i), "字节") // 8
+	fmt.Println("nil 接口size=", unsafe.Sizeof(i), "字节") // 8
 	/*
 	运行结果：
-	int变量长度= 8 字节
-	bool变量长度= 1 字节
-	只有一个int的数组长度= 8 字节
-	指针长度= 8 字节
-	nil切片长度= 24 字节
-	nil map长度= 8 字节
-	nil 通道长度= 8 字节
-	nil 函数变量长度= 8 字节
-	nil 接口长度= 16 字节
+	int变量size= 8 字节
+	bool变量size= 1 字节
+	只有一个int的数组size= 8 字节
+	指针size= 8 字节
+	nil切片size= 24 字节
+	nil mapsize= 8 字节
+	nil 通道size= 8 字节
+	nil 函数变量size= 8 字节
+	nil 接口size= 16 字节
 	 */
+
 }
 
 /*
