@@ -65,8 +65,32 @@ func receiverMethodTest() {
 	printStructMethod(t)
 	fmt.Println("自定义类型指针&t的方法集：")
 	printStructMethod(&t)
+	// TODO 对象方法集不包括指针方法， 为何可调用
 	t.TPtr()
 	t.tPtr()
+
+	var t1 *Ta
+	if t1 == nil {
+		fmt.Println("声明的类型指针的值是nil")
+	}
+	/*
+	运行结果：
+	自定义类型对象t= {{m string}}
+	自定义类型对象t的方法集：
+	类型= basic.Ta 方法个数= 2
+	方法名= SVal 方法类型= func(basic.Ta)
+	方法名= TVal 方法类型= func(basic.Ta)
+	自定义类型指针&t的方法集：
+	类型= *basic.Ta 方法个数= 4
+	方法名= SPtr 方法类型= func(*basic.Ta)
+	方法名= SVal 方法类型= func(*basic.Ta)
+	方法名= TPtr 方法类型= func(*basic.Ta)
+	方法名= TVal 方法类型= func(*basic.Ta)
+	TPtr call
+	tPtr call
+	声明的类型指针的值是nil
+
+	*/
 }
 
 type dataStruct struct {
@@ -105,6 +129,7 @@ func struct1() {
 	d0.valueMethod1()
 
 	var d1 *dataStruct
+
 	fmt.Println("d1 长度=", unsafe.Sizeof(d0), "字节")
 	d1.pointerMethod1()
 	//d1.valueMethod1()
