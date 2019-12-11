@@ -54,15 +54,16 @@ func receiverMethodTest() {
 	// 这样的声明已经为类型分配了空间， 可不是Nil， 但是通道这样声明就是nil
 	var t Ta
 	t.m = "m string"
+	fmt.Println("自定义类型对象t=", t)
 	/*
 		自定义类型变量不能与nil比较，
 		if t == nil {
 			fmt.Println("只声明的变量，其值是nil")
 		}
 	*/
-	fmt.Println("对象t的方法集：")
+	fmt.Println("自定义类型对象t的方法集：")
 	printStructMethod(t)
-	fmt.Println("指针t的方法集：")
+	fmt.Println("自定义类型指针&t的方法集：")
 	printStructMethod(&t)
 	t.TPtr()
 	t.tPtr()
