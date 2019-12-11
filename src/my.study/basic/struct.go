@@ -10,19 +10,20 @@ import (
 type S struct {
 	m string
 }
-func (S) sVal(){}
-func (*S) sPtr(){}
+func (S) SVal(){}
+func (*S) SPtr(){}
 
 type Ta struct{
 	S
 }
-func (Ta) tVal(){
+func (t Ta) TVal(){
 	fmt.Println("aaaaaaaaaaaaa ")
 }
-func (*Ta) tPtr(){}
+func (t *Ta) TPtr(){}
 
 func method1 (a interface{}){
 	t := reflect.TypeOf(a)
+
 	fmt.Println("t=", t, "t.nummethod=", t.NumMethod())
 
 	for i, n :=0,  t.NumMethod(); i< n; i++ {
@@ -34,7 +35,7 @@ func method1 (a interface{}){
 func  test1()  {
 	var t Ta
 	t1 := reflect.TypeOf(t)
-	fmt.Println("t=", t1, "t.nummethod=", t1.NumMethod())
+	fmt.Println("t=", t1, " t.nummethod=", t1.NumMethod())
 
 	method1(t)
 
@@ -83,11 +84,26 @@ func struct1() {
 	d0.pointerMethod1()
 	d0.valueMethod1()
 
-
 	var d1 *dataStruct
 	fmt.Println("d1 长度=", unsafe.Sizeof(d0), "字节")
 	d1.pointerMethod1()
-	d1.valueMethod1()
+	//d1.valueMethod1()
+	/*
+	导致：
+	panic: runtime error: invalid memory address or nil pointer dereference
+	[signal 0xc0000005 code=0x0 addr=0x0 pc=0x7298f0]
+
+	goroutine 1 [running]:
+	my.study/basic.struct1()
+	        F:/GoWorkSpace/gostudy/src/my.study/basic/struct.go:90 +0x2b0
+	my.study/basic.Struct()
+	        F:/GoWorkSpace/gostudy/src/my.study/basic/struct.go:165 +0x8a
+	main.base()
+	        F:/GoWorkSpace/gostudy/main.go:231 +0x6d
+	main.main()
+	        F:/GoWorkSpace/gostudy/main.go:72 +0x30a
+	exit status 2
+	 */
 
 	key := "key.1"
 	/*
@@ -183,18 +199,6 @@ pointerMethod1
 valueMethod1
 d1 长度= 64 字节
 pointerMethod1
-panic: runtime error: invalid memory address or nil pointer dereference
-[signal 0xc0000005 code=0x0 addr=0x0 pc=0x7298f0]
 
-goroutine 1 [running]:
-my.study/basic.struct1()
-        F:/GoWorkSpace/gostudy/src/my.study/basic/struct.go:90 +0x2b0
-my.study/basic.Struct()
-        F:/GoWorkSpace/gostudy/src/my.study/basic/struct.go:165 +0x8a
-main.base()
-        F:/GoWorkSpace/gostudy/main.go:231 +0x6d
-main.main()
-        F:/GoWorkSpace/gostudy/main.go:72 +0x30a
-exit status 2
 
  */
