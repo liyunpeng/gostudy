@@ -66,13 +66,12 @@ require (
 	my.study/encode/easyjson1 v0.0.0-00010101000000-000000000000 // indirect
 	my.study/encode/main v0.0.0-00010101000000-000000000000
 	my.study/gin v0.0.0-00010101000000-000000000000
-	my.study/gopool v0.0.0-00010101000000-000000000000
 	my.study/goprotobuf v0.0.0-00010101000000-000000000000 // indirect
 	my.study/http v0.0.0-00010101000000-000000000000
 	my.study/io v0.0.0-00010101000000-000000000000
-	my.study/iris v0.0.0-00010101000000-000000000000
-	my.study/iris/casbin1 v0.0.0-00010101000000-000000000000
-	my.study/iris/cookie v0.0.0-00010101000000-000000000000
+	my.study/iris v0.0.0-00010101000000-000000000000 // indirect
+	my.study/iris/casbin1 v0.0.0-00010101000000-000000000000 // indirect
+	my.study/iris/cookie v0.0.0-00010101000000-000000000000 // indirect
 	my.study/kafka v0.0.0-00010101000000-000000000000
 	my.study/locale v0.0.0-00010101000000-000000000000
 	my.study/net/client v0.0.0-00010101000000-000000000000
@@ -82,37 +81,36 @@ require (
 	my.study/rpc v0.0.0-00010101000000-000000000000
 	my.study/sql v0.0.0-00010101000000-000000000000
 	my.study/template v0.0.0-00010101000000-000000000000
-	my.study/xorm v0.0.0-00010101000000-000000000000
+	my.study/xorm v0.0.0-00010101000000-000000000000 // indirect
 )
 
 replace (
-	my.study/ => F:\GoWorkSpace\gostudy\src\my.study\
-	my.study/auto => F:\GoWorkSpace\gostudy\src\my.study\auto
-	my.study/basic => F:\GoWorkSpace\gostudy\src\my.study\basic
-	my.study/beego => F:\GoWorkSpace\gostudy\src\my.study\beego
-	my.study/btcoin => F:\GoWorkSpace\gostudy\src\my.study\btcoin
-	my.study/bufio => F:\GoWorkSpace\gostudy\src\my.study\bufio
-	my.study/context => F:\GoWorkSpace\gostudy\src\my.study\context
-	my.study/distribute => F:\GoWorkSpace\gostudy\src\my.study\distribute
-	my.study/elasticesearch => F:\GoWorkSpace\gostudy\src\my.study\elasticesearch
-	my.study/encode/easyjson1 => F:\GoWorkSpace\gostudy\src\my.study\encode\easyjson1
-	my.study/encode/main => F:\GoWorkSpace\gostudy\src\my.study\encode\main
-	my.study/gin => F:\GoWorkSpace\gostudy\src\my.study\gin
-	my.study/gopool => F:\GoWorkSpace\gostudy\src\my.study\gopool
-	my.study/goprotobuf => F:\GoWorkSpace\gostudy\src\my.study\goprotobuf
-	my.study/http => F:\GoWorkSpace\gostudy\src\my.study\http
-	my.study/io => F:\GoWorkSpace\gostudy\src\my.study\io
-	my.study/iris => F:\GoWorkSpace\gostudy\src\my.study\iris
-	my.study/iris/casbin1 => F:\GoWorkSpace\gostudy\src\my.study\iris\casbin1
-	my.study/iris/cookie => F:\GoWorkSpace\gostudy\src\my.study\iris\cookie
-	my.study/kafka => F:\GoWorkSpace\gostudy\src\my.study\kafka
-	my.study/locale => F:\GoWorkSpace\gostudy\src\my.study\locale
-	my.study/net/client => F:\GoWorkSpace\gostudy\src\my.study\net\client
-	my.study/net/server => F:\GoWorkSpace\gostudy\src\my.study\net\server
-	my.study/nosql => F:\GoWorkSpace\gostudy\src\my.study\nosql
-	my.study/regexp => F:\GoWorkSpace\gostudy\src\my.study\regexp
-	my.study/rpc => F:\GoWorkSpace\gostudy\src\my.study\rpc
-	my.study/sql => F:\GoWorkSpace\gostudy\src\my.study\sql
-	my.study/template => F:\GoWorkSpace\gostudy\src\my.study\template
-	my.study/xorm => F:\GoWorkSpace\gostudy\src\my.study\xorm
+	my.study/ => D:\goworkspace\gostudy\src\my.study\
+	my.study/auto => D:\goworkspace\gostudy\src\my.study\auto
+	my.study/basic => D:\goworkspace\gostudy\src\my.study\basic
+	my.study/beego => D:\goworkspace\gostudy\src\my.study\beego
+	my.study/btcoin => D:\goworkspace\gostudy\src\my.study\btcoin
+	my.study/bufio => D:\goworkspace\gostudy\src\my.study\bufio
+	my.study/context => D:\goworkspace\gostudy\src\my.study\context
+	my.study/distribute => D:\goworkspace\gostudy\src\my.study\distribute
+	my.study/elasticesearch => D:\goworkspace\gostudy\src\my.study\elasticesearch
+	my.study/encode/easyjson1 => D:\goworkspace\gostudy\src\my.study\encode\easyjson1
+	my.study/encode/main => D:\goworkspace\gostudy\src\my.study\encode\main
+	my.study/gin => D:\goworkspace\gostudy\src\my.study\gin
+	my.study/goprotobuf => D:\goworkspace\gostudy\src\my.study\goprotobuf
+	my.study/http => D:\goworkspace\gostudy\src\my.study\http
+	my.study/io => D:\goworkspace\gostudy\src\my.study\io
+	my.study/iris => D:\goworkspace\gostudy\src\my.study\iris
+	my.study/iris/casbin1 => D:\goworkspace\gostudy\src\my.study\iris\casbin1
+	my.study/iris/cookie => D:\goworkspace\gostudy\src\my.study\iris\cookie
+	my.study/kafka => D:\goworkspace\gostudy\src\my.study\kafka
+	my.study/locale => D:\goworkspace\gostudy\src\my.study\locale
+	my.study/net/client => D:\goworkspace\gostudy\src\my.study\net\client
+	my.study/net/server => D:\goworkspace\gostudy\src\my.study\net\server
+	my.study/nosql => D:\goworkspace\gostudy\src\my.study\nosql
+	my.study/regexp => D:\goworkspace\gostudy\src\my.study\regexp
+	my.study/rpc => D:\goworkspace\gostudy\src\my.study\rpc
+	my.study/sql => D:\goworkspace\gostudy\src\my.study\sql
+	my.study/template => D:\goworkspace\gostudy\src\my.study\template
+	my.study/xorm => D:\goworkspace\gostudy\src\my.study\xorm
 )

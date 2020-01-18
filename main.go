@@ -14,7 +14,6 @@ import (
 	//elasticesearch1 "my.study/elasticesearch"
 	main2 "my.study/encode/main"
 	gin1 "my.study/gin"
-	gopoll "my.study/gopool"
 	httpserver "my.study/http"
 	"my.study/io"
 	//iris1 "my.study/iris"
@@ -168,9 +167,9 @@ func main() {
 		kafka1.KafkaClient()
 		break
 
-	case "gopool":
-		gopoll.GopollMain()
-		break
+	//case "gopool":
+	//	gopoll.GopollMain()
+	//	break
 	//case "iris":
 	//	iris1.IrisMain()
 	//	break
