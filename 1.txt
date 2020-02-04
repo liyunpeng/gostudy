@@ -1,0 +1,5 @@
+  go mod 包管理正规化， 去掉所有子目录的go.mod文件
+  find -name "*.mod"  ! -path "./vendor/*" | xargs rm -rf
+
+包名路径不能带点， 一次向把所有.go文件的my.study/改为gostudy/src/mystudy/
+  find  -name "*.go" | xargs  sed -i 's/my.study\//gostudy\/src\/mystudy\//g'
