@@ -3,3 +3,38 @@
 
 包名路径不能带点， 一次向把所有.go文件的my.study/改为gostudy/src/mystudy/
   find  -name "*.go" | xargs  sed -i 's/my.study\//gostudy\/src\/mystudy\//g'
+
+
+-----------------------
+$ GODEBUG=gctrace=1 go run main.go base 2> log_file 主要是两种信息：
+一个是gc开头的，表示垃圾回收信息： 主要是时间方便的信息
+gc 1 @2.104s 0%: 0.018+1.3+0.076 ms clock, 0.054+0.35/1.0/3.0+0.23 ms cpu, 4->4->3 MB, 5 MB goal, 4 P。
+1 表示第一次执行
+@2.104s 表示程序执行的总时间    这个时间超过1s就是有问题的
+0% 垃圾回收时间占用的百分比，（不知道和谁比？难道是和上面的程序执行总时间，这样比较感觉没意义）
+
+0.018+1.3+0.076 ms clock 垃圾回收的时间，
+分别为STW（stop-the-world）清扫的时间, 并发标记和扫描的时间，STW标记的时间
+
+0.054+0.35/1.0/3.0+0.23 ms cpu 垃圾回收占用cpu时间
+
+4->4->3 MB 堆的大小，gc后堆的大小，存活堆的大小
+
+5 MB goal 整体堆的大小
+
+4 P 使用的处理器数量
+
+-----
+一个是scvg开头的,表示系统内存回收信息,这个很直白，看单词就知道大概意思了
+scvg0: inuse: 426, idle: 0, sys: 427, released: 0, consumed: 427 (MB)
+inuse: 426 使用多少M内存
+idle: 0 剩下要清除的内存
+sys: 427 系统映射的内存
+released: 0 释放的系统内存
+consumed: 427 申请的系统内存
+
+两种信息会相互交叉，由于gc发生的不能太频繁， 所以gc的log出现的频率少。
+
+生成heap.svg，
+go tool pprof -alloc_space -cum -svg http://127.0.0.1:8080/debug/pprof/heap > heap.svg
+用浏览器打开heap.svg:

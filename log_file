@@ -1,0 +1,1618 @@
+gc 1 @0.358s 1%: 0+13+0 ms clock, 0+11/12/6.0+0 ms cpu, 4->4->1 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+gc 2 @0.386s 1%: 0+1.0+0 ms clock, 0+0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+gc 3 @0.401s 1%: 0+1.0+1.0 ms clock, 0+1.0/1.0/0+4.0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+gc 4 @0.416s 1%: 0+1.0+0 ms clock, 0+0/1.0/0+0 ms cpu, 4->4->1 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+gc 5 @0.433s 1%: 0+2.0+0 ms clock, 0+2.0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 6 @0.486s 1%: 0+1.0+0 ms clock, 0+0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 7 @0.541s 1%: 0+1.0+0 ms clock, 0+1.0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 8 @0.595s 1%: 0+3.0+0 ms clock, 0+1.0/2.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 9 @0.643s 1%: 0+2.0+0 ms clock, 0+2.0/2.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+gc 10 @0.692s 1%: 0+1.0+0 ms clock, 0+0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+gc 11 @0.724s 1%: 0+1.0+0 ms clock, 0+3.0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 12 @0.777s 1%: 0+1.0+0 ms clock, 0+1.0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 13 @0.829s 1%: 0+2.0+0 ms clock, 0+1.0/2.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 14 @0.867s 1%: 0+1.0+0 ms clock, 0+1.0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+gc 15 @0.911s 1%: 0+1.0+0 ms clock, 0+0/1.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 16 @0.952s 1%: 0+2.0+0 ms clock, 0+0/2.0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+gc 17 @1.007s 1%: 0+0+0 ms clock, 0+0/0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+gc 18 @1.019s 1%: 0+0+0 ms clock, 0+0/0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 5 (MB)
+gc 19 @1.028s 1%: 0+1.0+0 ms clock, 0+1.0/1.0/1.0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 5 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 5 (MB)
+scvg: inuse: 4, idle: 2, sys: 7, released: 2, consumed: 4 (MB)
+gc 20 @1.039s 1%: 0+1.0+0 ms clock, 0+0/1.0/1.0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 2, consumed: 4 (MB)
+gc 21 @1.068s 1%: 0+1.0+0 ms clock, 0+0/0/2.0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 2, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+gc 22 @1.347s 1%: 0+0+0 ms clock, 0+0/0/0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+gc 23 @1.380s 1%: 0+2.0+0 ms clock, 0+0/2.0/1.0+0 ms cpu, 4->4->0 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 5, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 24 @1.412s 1%: 0+2.0+0 ms clock, 0+2.0/1.0/4.0+0 ms cpu, 4->4->1 MB, 5 MB goal, 4 P
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 2, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+gc 25 @1.573s 1%: 0+2.0+0 ms clock, 0+0/2.0/1.0+0 ms cpu, 4->4->1 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 26 @1.604s 1%: 0+2.0+0 ms clock, 0+0/2.0/2.0+0 ms cpu, 4->4->1 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 27 @1.638s 1%: 0+1.0+0 ms clock, 0+0/1.0/2.0+0 ms cpu, 4->4->1 MB, 5 MB goal, 4 P
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 28 @1.663s 1%: 0+3.0+0 ms clock, 0+0/3.0/6.0+0 ms cpu, 4->4->1 MB, 5 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 29 @1.697s 1%: 0+4.0+0 ms clock, 0+0/2.0/3.0+0 ms cpu, 4->4->2 MB, 5 MB goal, 4 P
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 4, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 3, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: 0 MB released
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+scvg: inuse: 4, idle: 3, sys: 7, released: 3, consumed: 4 (MB)
+gc 30 @1.721s 1%: 0+2.0+0 ms clock, 0+2.0/2.0/4.0+0 ms cpu, 4->4->2 MB, 5 MB goal, 4 P
+gc 31 @1.751s 1%: 0+2.0+0 ms clock, 0+0/1.0/3.0+0 ms cpu, 4->4->2 MB, 5 MB goal, 4 P
+gc 32 @1.789s 1%: 0+2.0+0 ms clock, 0+0/2.0/4.0+0 ms cpu, 4->4->2 MB, 5 MB goal, 4 P
+gc 33 @1.826s 1%: 0+2.0+0 ms clock, 0+0/2.0/4.0+0 ms cpu, 4->4->2 MB, 5 MB goal, 4 P
+gc 34 @1.854s 1%: 0+1.0+0 ms clock, 0+0/1.0/2.0+0 ms cpu, 5->5->2 MB, 6 MB goal, 4 P
+gc 35 @1.893s 1%: 0+2.0+0 ms clock, 0+0/2.0/4.0+0 ms cpu, 5->5->3 MB, 6 MB goal, 4 P
+gc 36 @1.959s 1%: 16+14+0 ms clock, 64+1.0/3.0/10+0 ms cpu, 5->6->3 MB, 6 MB goal, 4 P
+gc 37 @2.119s 1%: 0+2.0+0 ms clock, 0+0/2.0/4.0+0 ms cpu, 6->7->3 MB, 7 MB goal, 4 P
+gc 38 @2.166s 1%: 0+2.0+0 ms clock, 0+0/2.0/4.0+0 ms cpu, 6->6->3 MB, 7 MB goal, 4 P
+gc 39 @2.255s 1%: 0+3.0+0 ms clock, 0+0/3.0/6.0+0 ms cpu, 7->7->3 MB, 8 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 8, idle: 2, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 8, idle: 2, sys: 11, released: 2, consumed: 9 (MB)
+gc 40 @2.426s 1%: 0+7.0+0 ms clock, 0+0/7.0/7.0+0 ms cpu, 7->7->4 MB, 8 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 6, idle: 5, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 6, idle: 4, sys: 11, released: 2, consumed: 9 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 4, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 7, idle: 3, sys: 11, released: 2, consumed: 9 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 3, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 8, idle: 3, sys: 11, released: 2, consumed: 9 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 3, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 8, idle: 2, sys: 11, released: 2, consumed: 9 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 2, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 9, idle: 2, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 9, idle: 2, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 9, idle: 2, sys: 11, released: 2, consumed: 9 (MB)
+scvg: inuse: 10, idle: 4, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 11, idle: 4, sys: 15, released: 4, consumed: 11 (MB)
+gc 41 @2.446s 1%: 0+9.0+0 ms clock, 0+2.0/7.0/0+0 ms cpu, 8->9->5 MB, 9 MB goal, 4 P
+scvg: inuse: 7, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 11, idle: 4, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 11, idle: 4, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 12, idle: 3, sys: 15, released: 3, consumed: 12 (MB)
+gc 42 @2.474s 1%: 0+6.0+0 ms clock, 0+0/6.0/0+0 ms cpu, 9->10->5 MB, 10 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 11, idle: 4, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 12, idle: 3, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 12, idle: 3, sys: 15, released: 3, consumed: 12 (MB)
+gc 43 @2.492s 1%: 0+7.0+0 ms clock, 0+2.0/7.0/0+0 ms cpu, 9->11->5 MB, 10 MB goal, 4 P
+scvg: inuse: 12, idle: 3, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 11, idle: 4, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 11, idle: 4, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 12, idle: 3, sys: 15, released: 3, consumed: 12 (MB)
+gc 44 @2.528s 1%: 0+6.0+0 ms clock, 0+0/6.0/4.0+0 ms cpu, 9->10->4 MB, 10 MB goal, 4 P
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 11, idle: 4, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+gc 45 @2.553s 2%: 0+5.0+0 ms clock, 0+1.0/4.0/5.0+0 ms cpu, 9->9->4 MB, 10 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+gc 46 @2.599s 2%: 0+6.0+0 ms clock, 0+0/6.0/2.0+0 ms cpu, 8->9->4 MB, 9 MB goal, 4 P
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 7, sys: 15, released: 3, consumed: 12 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 3, consumed: 11 (MB)
+gc 47 @2.666s 2%: 0+6.0+0 ms clock, 0+0/6.0/0+0 ms cpu, 8->9->4 MB, 9 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 6, idle: 9, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 9, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 9, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 9, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 9, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+gc 48 @2.715s 2%: 0+5.0+0 ms clock, 0+1.0/5.0/3.0+0 ms cpu, 8->8->4 MB, 9 MB goal, 4 P
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+gc 49 @2.779s 2%: 0+8.0+0 ms clock, 0+0/8.0/0+0 ms cpu, 8->8->4 MB, 9 MB goal, 4 P
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 9, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 6, idle: 9, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 9, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 4, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 10, idle: 4, sys: 15, released: 4, consumed: 11 (MB)
+gc 50 @2.834s 2%: 0+9.0+0 ms clock, 0+0/7.0/0+0 ms cpu, 8->9->4 MB, 9 MB goal, 4 P
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 8, idle: 7, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 8, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 9, idle: 6, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 9, idle: 5, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 10, idle: 5, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 10, idle: 4, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 11, idle: 4, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 11, idle: 4, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 11, idle: 3, sys: 15, released: 3, consumed: 11 (MB)
+gc 51 @2.861s 2%: 0+4.0+0 ms clock, 0+0/4.0/3.0+0 ms cpu, 9->10->4 MB, 10 MB goal, 4 P
+scvg: inuse: 11, idle: 4, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 6, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 3, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 11 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 4, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 5, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 5, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 5, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 5, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 5, consumed: 10 (MB)
+scvg: inuse: 7, idle: 8, sys: 15, released: 5, consumed: 10 (MB)
+scvg: 0 MB released
+scvg: inuse: 7, idle: 8, sys: 15, released: 5, consumed: 10 (MB)
+# command-line-arguments
+gc 1 @0.010s 2%: 0+2.0+0 ms clock, 0+0/1.0/2.0+0 ms cpu, 4->6->6 MB, 5 MB goal, 4 P
+gc 2 @0.033s 8%: 1.0+9.0+0 ms clock, 4.0+1.0/8.0/2.0+0 ms cpu, 9->10->9 MB, 12 MB goal, 4 P
+gc 3 @0.079s 5%: 0+6.0+0 ms clock, 0+0/6.0/5.0+0 ms cpu, 16->18->16 MB, 18 MB goal, 4 P
+gc 4 @0.145s 5%: 0+12+0 ms clock, 0+3.0/12/10+0 ms cpu, 30->32->29 MB, 33 MB goal, 4 P
+gc 5 @0.269s 4%: 0+23+0 ms clock, 0+0/23/26+0 ms cpu, 54->57->53 MB, 59 MB goal, 4 P
+gc 6 @0.455s 4%: 0+35+0 ms clock, 0+3.0/35/23+0 ms cpu, 100->103->92 MB, 107 MB goal, 4 P
+gc 7 @0.841s 4%: 0+73+0 ms clock, 0+0/73/65+0 ms cpu, 177->181->166 MB, 185 MB goal, 4 P
+gc 1 @0.090s 0%: 0+2.0+0 ms clock, 0+1.0/1.0/0+0 ms cpu, 19->19->16 MB, 20 MB goal, 4 P
+2020/02/04 22:30:29 runtime.go:29:foo: ENTRY: 
+2020/02/04 22:30:29 runtime.go:30:foo: ENTRY: Param p=helloworld
+2020/02/04 22:30:29 runtime.go:31:foo: DEBUG: Test Hello World
+gc 2 @0.226s 0%: 0+1.0+1.0 ms clock, 0+0/1.0/1.0+4.0 ms cpu, 20->20->3 MB, 33 MB goal, 300 P (forced)
+scvg: 0 MB released
+scvg: inuse: 5, idle: 20, sys: 25, released: 3, consumed: 21 (MB)
+scvg: 0 MB released
+scvg: inuse: 5, idle: 20, sys: 25, released: 3, consumed: 21 (MB)
+scvg: inuse: 5, idle: 20, sys: 25, released: 3, consumed: 21 (MB)
+0
