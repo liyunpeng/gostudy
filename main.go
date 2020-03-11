@@ -48,8 +48,8 @@ func init() {
 }
 
 func main() {
-	defer profile.Start().Stop()
-
+	//defer profile.Start().Stop()
+ 	defer profile.Start(profile.MemProfile).Stop()
 	logger, err := seelog.LoggerFromConfigAsFile("seelog.xml")
 	/*
 		决定了所有seelog 在main结束时输出，控制台的随州输出seelog

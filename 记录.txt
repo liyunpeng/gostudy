@@ -36,3 +36,10 @@ Showing nodes accounting for 60ms, 100% of 60ms total
          0     0%   100%       10ms 16.67%  runtime.stopm
 bogon:gostudy admin1$ go tool pprof -pdf ./main /var/folders/jn/bg1m0mf94pb_jgbgx9bv3wwr0000gp/T/profile579876973/cpu.pprof
 Generating report in profile001.pdf
+
+
+<------------------------ Nil1 end ----------------------------->
+2020/03/11 22:04:41 profile: memory profiling disabled, /var/folders/jn/bg1m0mf94pb_jgbgx9bv3wwr0000gp/T/profile744611594/mem.pprof
+bogon:gostudy admin1$ go tool pprof -pdf ./main /var/folders/jn/bg1m0mf94pb_jgbgx9bv3wwr0000gp/T/profile579876973/cpu.pprof
+bogon:gostudy admin1$ go tool pprof -pdf ./main /var/folders/jn/bg1m0mf94pb_jgbgx9bv3wwr0000gp/T/profile744611594/mem.pprof
+
