@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/cihub/seelog"
 	"log"
+	"github.com/pkg/profile"
+
 	"gostudy/src/mystudy/auto"
 	"gostudy/src/mystudy/basic"
 	beego1 "gostudy/src/mystudy/beego"
@@ -46,6 +48,8 @@ func init() {
 }
 
 func main() {
+	defer profile.Start().Stop()
+
 	logger, err := seelog.LoggerFromConfigAsFile("seelog.xml")
 	/*
 		决定了所有seelog 在main结束时输出，控制台的随州输出seelog

@@ -1,0 +1,38 @@
+bogon:gostudy admin1$ go tool pprof -text ./main /var/folders/jn/bg1m0mf94pb_jgbgx9bv3wwr0000gp/T/profile579876973/cpu.pprof
+File: main
+Type: cpu
+Time: Mar 11, 2020 at 9:38pm (CST)
+Duration: 201.48ms, Total samples = 60ms (29.78%)
+Showing nodes accounting for 60ms, 100% of 60ms total
+      flat  flat%   sum%        cum   cum%
+      20ms 33.33% 33.33%       20ms 33.33%  runtime.memmove
+      10ms 16.67% 50.00%       10ms 16.67%  golang.org/x/crypto/scrypt.blockXOR
+      10ms 16.67% 66.67%       10ms 16.67%  golang.org/x/crypto/scrypt.salsaXOR
+      10ms 16.67% 83.33%       10ms 16.67%  internal/fmtsort.Sort
+      10ms 16.67%   100%       10ms 16.67%  runtime.pthread_cond_wait
+         0     0%   100%       10ms 16.67%  fmt.(*pp).doPrintf
+         0     0%   100%       10ms 16.67%  fmt.(*pp).printArg
+         0     0%   100%       10ms 16.67%  fmt.(*pp).printValue
+         0     0%   100%       10ms 16.67%  fmt.Fprintf
+         0     0%   100%       10ms 16.67%  fmt.Printf
+         0     0%   100%       40ms 66.67%  golang.org/x/crypto/scrypt.Key
+         0     0%   100%       20ms 33.33%  golang.org/x/crypto/scrypt.blockCopy
+         0     0%   100%       10ms 16.67%  golang.org/x/crypto/scrypt.blockMix
+         0     0%   100%       40ms 66.67%  golang.org/x/crypto/scrypt.smix
+         0     0%   100%       10ms 16.67%  gostudy/src/mystudy/basic.Map1
+         0     0%   100%       10ms 16.67%  gostudy/src/mystudy/basic.map1
+         0     0%   100%       40ms 66.67%  gostudy/src/mystudy/encode/main.Encode
+         0     0%   100%       40ms 66.67%  gostudy/src/mystudy/encode/main.HashEncode
+         0     0%   100%       40ms 66.67%  gostudy/src/mystudy/encode/main.script
+         0     0%   100%       50ms 83.33%  main.base
+         0     0%   100%       50ms 83.33%  main.main
+         0     0%   100%       10ms 16.67%  runtime.findrunnable
+         0     0%   100%       50ms 83.33%  runtime.main
+         0     0%   100%       10ms 16.67%  runtime.mcall
+         0     0%   100%       10ms 16.67%  runtime.notesleep
+         0     0%   100%       10ms 16.67%  runtime.park_m
+         0     0%   100%       10ms 16.67%  runtime.schedule
+         0     0%   100%       10ms 16.67%  runtime.semasleep
+         0     0%   100%       10ms 16.67%  runtime.stopm
+bogon:gostudy admin1$ go tool pprof -pdf ./main /var/folders/jn/bg1m0mf94pb_jgbgx9bv3wwr0000gp/T/profile579876973/cpu.pprof
+Generating report in profile001.pdf

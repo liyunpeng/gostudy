@@ -47,6 +47,7 @@ require (
 	github.com/markbates/goth v1.61.1
 	github.com/mattn/go-colorable v0.1.4 // indirect
 	github.com/moul/http2curl v1.0.0 // indirect
+	github.com/pkg/profile v1.4.0
 	github.com/prashantv/gostub v1.0.0
 	github.com/sergi/go-diff v1.1.0 // indirect
 	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
