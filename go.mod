@@ -6,7 +6,7 @@ require (
 	github.com/CloudyKit/fastprinter v0.0.0-20200109182630-33d98a066a53 // indirect
 	github.com/Shopify/sarama v1.26.0
 	github.com/ajg/form v1.5.1 // indirect
-	github.com/astaxie/beego v1.12.0
+	github.com/astaxie/beego v1.12.2
 	github.com/astaxie/session v0.0.0-20130408050157-95d7fe18579c
 	github.com/aws/aws-sdk-go v1.28.9
 	github.com/btcsuite/btcd v0.20.1-beta
@@ -30,7 +30,7 @@ require (
 	github.com/gavv/monotime v0.0.0-20190418164738-30dba4353424 // indirect
 	github.com/gin-gonic/gin v1.5.0
 	github.com/go-sql-driver/mysql v1.5.0
-	github.com/golang/protobuf v1.3.3
+	github.com/golang/protobuf v1.4.2
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/gorilla/schema v1.1.0 // indirect
 	github.com/gorilla/securecookie v1.1.1
@@ -50,7 +50,6 @@ require (
 	github.com/pkg/profile v1.4.0
 	github.com/prashantv/gostub v1.0.0
 	github.com/sergi/go-diff v1.1.0 // indirect
-	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/urfave/negroni v1.0.0
