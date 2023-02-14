@@ -8,7 +8,7 @@ require (
 	github.com/ajg/form v1.5.1 // indirect
 	github.com/astaxie/beego v1.12.0
 	github.com/astaxie/session v0.0.0-20130408050157-95d7fe18579c
-	github.com/aws/aws-sdk-go v1.28.9
+	github.com/aws/aws-sdk-go v1.34.0
 	github.com/btcsuite/btcd v0.20.1-beta
 	github.com/btcsuite/btcutil v1.0.1
 	github.com/casbin/casbin v1.9.1
